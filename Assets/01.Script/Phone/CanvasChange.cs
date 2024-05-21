@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PhoneButton : MonoBehaviour
+public class CanvasChange : MonoBehaviour
 {
     public Button button; // 버튼 컴포넌트
     public GameObject targetObject; // 비활성화할 오브젝트

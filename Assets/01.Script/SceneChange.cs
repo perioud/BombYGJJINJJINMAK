@@ -1,19 +1,14 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class SceneChange : MonoBehaviour
 {
-    public OVRInput.Controller controller;
+
     public void LoadScene()
     {
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, controller))
-        {
-            // 3초 후에 LoadSceneDelayed 메서드를 호출
-            Invoke("LoadSceneDelayed", 3.0f);
-        }
+        // 3초 후에 LoadSceneDelayed 메서드를 호출
+        Invoke("LoadSceneDelayed", 5.0f);
     }
 
     private void LoadSceneDelayed()
