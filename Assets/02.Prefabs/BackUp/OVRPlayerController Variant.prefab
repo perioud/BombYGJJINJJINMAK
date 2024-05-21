@@ -156,8 +156,6 @@ MonoBehaviour:
   controller: -1
   delayTime: 30
   tts: {fileID: 2789697187973177466}
-  tts2: {fileID: 507516480046547530}
-  correct: {fileID: 936031448013902612}
 --- !u!82 &936031448013902612
 AudioSource:
   m_ObjectHideFlags: 0
@@ -735,7 +733,6 @@ GameObject:
   - component: {fileID: 3537429124014711125}
   - component: {fileID: 2187688358171522102}
   - component: {fileID: 452571763264445450}
-  - component: {fileID: 1138200276875183444}
   - component: {fileID: 3082212211764486515}
   - component: {fileID: 8545296298036140310}
   - component: {fileID: 6018978407612701570}
@@ -857,102 +854,6 @@ MonoBehaviour:
   Camera2Follow: {fileID: 8174070985051131687}
   CameraDistance: 1
   smoothTime: 0.3
---- !u!82 &1138200276875183444
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1693884281826003433}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d170249569e41fb46b0b690155e298be, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &3082212211764486515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -968,6 +869,8 @@ MonoBehaviour:
   canvasToDisable: {fileID: 1693884281826003433}
   nextCanvasToShow: {fileID: 1693884281826003433}
   nuc: {fileID: 8545296298036140310}
+  tts: {fileID: 0}
+  correct: {fileID: 0}
 --- !u!82 &8545296298036140310
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4857,16 +4760,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a155a369eaf20104cb1a39b00a07b687, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineSize: 1
   raycastOrigin: {fileID: 8174070985051649321}
   controller: 2
   lineRenderer: {fileID: 1042436083244089835}
   noHitColor: {r: 1, g: 0, b: 0, a: 1}
   hitColor: {r: 0, g: 1, b: 0, a: 1}
-  itemToolTips: []
-  _itemToolTipTextPerent: {fileID: 0}
-  inventory: {fileID: 0}
-  lastHitItem: {fileID: 0}
+  raycastDistance: 0
 --- !u!120 &1042436083244089835
 LineRenderer:
   serializedVersion: 2
@@ -4989,16 +4888,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a155a369eaf20104cb1a39b00a07b687, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineSize: 16
   raycastOrigin: {fileID: 8174070985051636013}
   controller: 1
   lineRenderer: {fileID: 5727881199491218727}
   noHitColor: {r: 1, g: 0, b: 0, a: 1}
   hitColor: {r: 0, g: 1, b: 0, a: 1}
-  itemToolTips: []
-  _itemToolTipTextPerent: {fileID: 0}
-  inventory: {fileID: 0}
-  lastHitItem: {fileID: 0}
+  raycastDistance: 0
 --- !u!120 &5727881199491218727
 LineRenderer:
   serializedVersion: 2

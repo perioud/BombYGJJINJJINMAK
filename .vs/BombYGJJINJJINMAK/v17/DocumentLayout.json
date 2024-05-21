@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7FFA93-CE99-8BF5-1445-8E8785612B41}|Oculus.VR.csproj|c:\\users\\jkjk0\\desktop\\unitygit\\bombygjjinjjinmak\\assets\\oculus\\vr\\scripts\\ovrmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7FFA93-CE99-8BF5-1445-8E8785612B41}|Oculus.VR.csproj|solutionrelative:assets\\oculus\\vr\\scripts\\ovrmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F1B17FC-9219-2307-1D83-98F3E9E6CAE2}|Assembly-CSharp.csproj|c:\\users\\jkjk0\\desktop\\unitygit\\bombygjjinjjinmak\\assets\\01.script\\leesoo\\ui\\canvasonoff3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F1B17FC-9219-2307-1D83-98F3E9E6CAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\01.script\\leesoo\\ui\\canvasonoff3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F1B17FC-9219-2307-1D83-98F3E9E6CAE2}|Assembly-CSharp.csproj|C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\assets\\seenuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F1B17FC-9219-2307-1D83-98F3E9E6CAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\seenuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BCADCB4-8D32-DBB9-8F1F-48EE14952F1D}|Oculus.Interaction.Editor.csproj|C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\assets\\oculus\\interaction\\editor\\poke\\pokeinteractableeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BCADCB4-8D32-DBB9-8F1F-48EE14952F1D}|Oculus.Interaction.Editor.csproj|solutionrelative:assets\\oculus\\interaction\\editor\\poke\\pokeinteractableeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F1B17FC-9219-2307-1D83-98F3E9E6CAE2}|Assembly-CSharp.csproj|C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\assets\\mainquest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F1B17FC-9219-2307-1D83-98F3E9E6CAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\mainquest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7FFA93-CE99-8BF5-1445-8E8785612B41}|Oculus.VR.csproj|C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\assets\\oculus\\vr\\scripts\\util\\ovrscreenfade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7FFA93-CE99-8BF5-1445-8E8785612B41}|Oculus.VR.csproj|solutionrelative:assets\\oculus\\vr\\scripts\\util\\ovrscreenfade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F1B17FC-9219-2307-1D83-98F3E9E6CAE2}|Assembly-CSharp.csproj|C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\assets\\01.script\\playtv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F1B17FC-9219-2307-1D83-98F3E9E6CAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\01.script\\playtv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7FFA93-CE99-8BF5-1445-8E8785612B41}|Oculus.VR.csproj|C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\assets\\oculus\\vr\\scripts\\util\\ovrscenesamplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7FFA93-CE99-8BF5-1445-8E8785612B41}|Oculus.VR.csproj|solutionrelative:assets\\oculus\\vr\\scripts\\util\\ovrscenesamplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OVRManager.cs",
+              "DocumentMoniker": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\Oculus\\VR\\Scripts\\OVRManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Oculus\\VR\\Scripts\\OVRManager.cs",
+              "ToolTip": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\Oculus\\VR\\Scripts\\OVRManager.cs",
+              "RelativeToolTip": "Assets\\Oculus\\VR\\Scripts\\OVRManager.cs",
+              "ViewState": "AQIAAHwKAAAAAAAAAAAYwIoKAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T09:29:01.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CanvasOnOff3.cs",
+              "DocumentMoniker": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\01.Script\\Leesoo\\Ui\\CanvasOnOff3.cs",
+              "RelativeDocumentMoniker": "Assets\\01.Script\\Leesoo\\Ui\\CanvasOnOff3.cs",
+              "ToolTip": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\01.Script\\Leesoo\\Ui\\CanvasOnOff3.cs",
+              "RelativeToolTip": "Assets\\01.Script\\Leesoo\\Ui\\CanvasOnOff3.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAowBEAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T00:09:20.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PokeInteractableEditor.cs",
+              "DocumentMoniker": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\Oculus\\Interaction\\Editor\\Poke\\PokeInteractableEditor.cs",
+              "RelativeDocumentMoniker": "Assets\\Oculus\\Interaction\\Editor\\Poke\\PokeInteractableEditor.cs",
+              "ToolTip": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\Oculus\\Interaction\\Editor\\Poke\\PokeInteractableEditor.cs",
+              "RelativeToolTip": "Assets\\Oculus\\Interaction\\Editor\\Poke\\PokeInteractableEditor.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowC0AAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T02:31:02.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OVRScreenFade.cs",
+              "DocumentMoniker": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\Oculus\\VR\\Scripts\\Util\\OVRScreenFade.cs",
+              "RelativeDocumentMoniker": "Assets\\Oculus\\VR\\Scripts\\Util\\OVRScreenFade.cs",
+              "ToolTip": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\Oculus\\VR\\Scripts\\Util\\OVRScreenFade.cs",
+              "RelativeToolTip": "Assets\\Oculus\\VR\\Scripts\\Util\\OVRScreenFade.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAA6wFUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T01:32:25.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OVRSceneSampleController.cs",
+              "DocumentMoniker": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\Oculus\\VR\\Scripts\\Util\\OVRSceneSampleController.cs",
+              "RelativeDocumentMoniker": "Assets\\Oculus\\VR\\Scripts\\Util\\OVRSceneSampleController.cs",
+              "ToolTip": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\Oculus\\VR\\Scripts\\Util\\OVRSceneSampleController.cs",
+              "RelativeToolTip": "Assets\\Oculus\\VR\\Scripts\\Util\\OVRSceneSampleController.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAqwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T01:30:05.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainQuest1.cs",
+              "DocumentMoniker": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\MainQuest1.cs",
+              "RelativeDocumentMoniker": "Assets\\MainQuest1.cs",
+              "ToolTip": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\MainQuest1.cs",
+              "RelativeToolTip": "Assets\\MainQuest1.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAqwB0AAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T22:54:34.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlayTV.cs",
+              "DocumentMoniker": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\01.Script\\PlayTV.cs",
+              "RelativeDocumentMoniker": "Assets\\01.Script\\PlayTV.cs",
+              "ToolTip": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\01.Script\\PlayTV.cs",
+              "RelativeToolTip": "Assets\\01.Script\\PlayTV.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAmwDQAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T22:52:48.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SeeNuc.cs",
+              "DocumentMoniker": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\SeeNuc.cs",
+              "RelativeDocumentMoniker": "Assets\\SeeNuc.cs",
+              "ToolTip": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\SeeNuc.cs",
+              "RelativeToolTip": "Assets\\SeeNuc.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowC8AAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T20:49:06.574Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

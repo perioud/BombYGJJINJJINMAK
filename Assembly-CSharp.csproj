@@ -85,6 +85,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\DebugUI\Scripts\HandedInputSelector.cs" />
     <Compile Include="Assets\01.Script\SceneChange.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTargetHandlerNode.cs" />
+    <Compile Include="Assets\SliderControl.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\ButtonTriggerZone.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\StartScene\Scripts\StartMenu.cs" />
     <Compile Include="Assets\01.Script\Leesoo\Items\Inventory.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportInputHandlerTouch.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\RayToolView.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\BoneCapsuleTriggerLogic.cs" />
+    <Compile Include="Assets\MainQuest1.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Interactable.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\OverlayPassthrough.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Locomotion\Scripts\CharacterCapsule.cs" />
@@ -134,6 +136,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\BouncingBallMgr.cs" />
     <Compile Include="Assets\01.Script\TargetDirection.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\CustomHands\Scripts\HandPose.cs" />
+    <Compile Include="Assets\01.Script\Phone\CanvasChange.cs" />
     <Compile Include="Assets\01.Script\PlayerMove.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\SimpleResizer\SimpleResizer.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\AnchorUIManager.cs" />
@@ -177,7 +180,6 @@
     <Compile Include="Assets\01.Script\Leesoo\Items\ItemPickup.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportAimHandlerLaser.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\LocomotionTeleport.cs" />
-    <Compile Include="Assets\01.Script\Phone\PhoneButton.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\ControllerBoxController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\AugmentedObject.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\InteractableToolsInputRouter.cs" />
@@ -230,6 +232,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransitionWarp.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\WindmillController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Firebase\AnalyticsUI.cs" />
+    <Compile Include="Assets\SeeNuc.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainTrack.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\LocomotionController.cs" />
     <Compile Include="Assets\01.Script\Leesoo\Ui\CanvasOnOff.cs" />
