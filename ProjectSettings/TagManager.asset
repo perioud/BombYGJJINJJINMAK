@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Button
+  - UICamera
+  - SamplesInfoPanel
   layers:
   - Default
   - TransparentFX
@@ -15,7 +17,7 @@ TagManager:
   - Postprocess
   - Player
   - Grabbables
-  - 
+  - TeleportLayer
   - 
   - 
   - 
