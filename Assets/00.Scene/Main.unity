@@ -958,7 +958,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &34510715
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17646,7 +17646,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &786017774
 Transform:
   m_ObjectHideFlags: 0
@@ -34677,7 +34677,7 @@ PrefabInstance:
     - target: {fileID: 1805517162255678469, guid: d194493870196bd4a997f0905dddbcd5,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2002154257538961241, guid: d194493870196bd4a997f0905dddbcd5,
         type: 3}
@@ -36586,7 +36586,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1653914659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44654,7 +44654,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2042387109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45477,9 +45477,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 1336337971}
-  nextCanvas: {fileID: 1085213444}
-  controller: 2
-  dragSpeed: 0.1
+  unlockText: {fileID: 0}
+  unlockThreshold: 0.9
+  unlockSound: {fileID: 0}
 --- !u!114 &2074587104
 MonoBehaviour:
   m_ObjectHideFlags: 0
