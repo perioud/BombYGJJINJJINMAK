@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class opmusic : MonoBehaviour
 {
-    AudioSource audioSource;
+    public AudioSource audioSource;
 
     void Start()
     {
@@ -15,7 +15,7 @@ public class opmusic : MonoBehaviour
     void Update()
     {
         // Quest1 오브젝트가 활성화되면 음악을 멈춥니다.
-        if (GameObject.Find("NukeQuest") != null && GameObject.Find("NukeQuest").activeSelf)
+        if (GameObject.Find("Tutorial3") != null && GameObject.Find("Tutorial3").activeSelf)
         {
             audioSource.Stop();
         }
