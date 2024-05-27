@@ -23,7 +23,7 @@ public class SeeNuc : MonoBehaviour
     void Awake()
     {
         target = Camera2Follow.transform;
-        globalVolume.profile.TryGet(out bloom); // ºí·ë È¿°ú¸¦ °¡Á®¿È
+        //globalVolume.profile.TryGet(out bloom); // ºí·ë È¿°ú¸¦ °¡Á®¿È
     }
 
     void Update()
