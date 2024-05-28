@@ -17,6 +17,7 @@ public class CanvasOnOff2 : MonoBehaviour
     private bool tts2Played = false;
     private bool correctPlayed = false;
     public GameObject bomb;
+    public GameObject SeeTarget;
     public AudioSource tts;
     public AudioSource tts2;
     public AudioSource correct;
@@ -44,9 +45,9 @@ public class CanvasOnOff2 : MonoBehaviour
             }
 
             PerformAction();
-            Invoke("ActivateBomb", 30f);
+            Invoke("ActivateBomb", 20f);
             actionPerformed = true;
-            Invoke("Disable", 28f);
+            Invoke("Disable", 22f);
 
             if (!tts2Played)
             {
@@ -79,6 +80,7 @@ public class CanvasOnOff2 : MonoBehaviour
             Debug.Log("Bomb È°¼ºÈ­");
             Invoke("EnableNextCanvas", 3f);
         }
+        SeeTarget.SetActive(true);
     }
 
     void PerformAction()
