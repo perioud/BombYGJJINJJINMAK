@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GetItemName : MonoBehaviour
+public class WallDetection : MonoBehaviour
 {
-    public string inSlotItemName;
-    
+    public LayerMask wallLayer;
+   
 }

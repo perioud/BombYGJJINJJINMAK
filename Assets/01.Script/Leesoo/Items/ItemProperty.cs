@@ -11,6 +11,7 @@ public class ItemProperty : MonoBehaviour
 
     public ItemType itemType; //아이템 유형
 
+
     public bool isHit;
     public enum ItemType
     {

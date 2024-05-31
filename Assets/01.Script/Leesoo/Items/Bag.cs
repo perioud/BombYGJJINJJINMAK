@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class Bag : MonoBehaviour
 {
+    public GameObject NotesScreen;
     public GameObject Slot;
     int slotIndex;
     // 이미지를 변경하는 함수
@@ -18,13 +19,32 @@ public class Bag : MonoBehaviour
             
             imageComponent.sprite = other.gameObject.GetComponent<ItemProperty>().itemImage;
             Slot.transform.GetChild(slotIndex).GetChild(0).GetComponent<GetItemName>().inSlotItemName = other.gameObject.GetComponent<ItemProperty>().itemName;
-
+            
             Color color = imageComponent.color;
             color.a = 1f;
-
             imageComponent.color = color;
+            CompareItemCheckList(Slot.transform.GetChild(slotIndex).GetChild(0).GetComponent<GetItemName>().inSlotItemName);
             slotIndex++;
             other.gameObject.SetActive(false);
+        }
+
+
+
+    }
+   
+    private void CompareItemCheckList(string inSlotItemName)
+    {
+        
+        for (int i = 1; i < NotesScreen.transform.childCount; i++)
+        {   
+            
+            string checkListItemName = NotesScreen.transform.GetChild(i).GetComponent<GetItemName>().inSlotItemName;
+            if (checkListItemName == inSlotItemName)
+            {
+                NotesScreen.transform.GetChild(i).GetComponent<Toggle>().isOn = true; break;
+            }
+            
+
         }
     }
 
@@ -96,7 +116,7 @@ public class Bag : MonoBehaviour
     //    }
     //}
 
-    
+
     //    // 충돌한 오브젝트가 가방 오브젝트인지 확인
     //    if (collision.gameObject.CompareTag("Inventory"))
     //    {

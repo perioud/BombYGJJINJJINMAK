@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Pointer : MonoBehaviour
 {
-    //public float lineSize = 16f;
     public Transform raycastOrigin; // 레이 시작 지점
     public OVRInput.Controller controller;
     public LineRenderer lineRenderer;
@@ -17,40 +16,19 @@ public class Pointer : MonoBehaviour
     private Button currentButton; // 현재 충돌한 버튼
     private Toggle currentToggle; // 현재 충돌한 토글
     private Slider currentSlider; // 현재 충돌한 슬라이더
-
-    //[SerializeField]
-    //TextProperty[] itemToolTips;        //_itemToolTipTextPerent에서 GetComponentsInChildrun을 통해
-    //                                    //TextProperty를 List로 저장하기 위한 변수 (중요)
-    //[SerializeField]
-    //private GameObject _itemToolTipTextPerent;      //TextProperty Class를 가지고 있는 오브젝트를 참조하기 위해
-    //                                                //아이템 오브젝트 부모를 지정하기위한 변수(중요)
-    //private bool isHit;
-    //[SerializeField]
-    //private GameObject inventory;   //인벤토리
-
-    //[SerializeField]
-    //private ItemProperty lastHitItem = null;
-    // public List<ItemProperty> itemProperties; //아이템 저장
-
-
+    private GameObject ItemUi; // 현재 충돌한 Item 오브젝트 // UI on /off
 
     void Start()
     {
-
         lineRenderer.startColor = noHitColor;
         lineRenderer.endColor = noHitColor;
-
-        // itemProperties = new List<ItemProperty>();
-        //  itemToolTips = new List<TextProperty>();
     }
 
     void Update()
     {
-
         // 레이캐스트를 트리거 버튼 상태에 따라 활성화/비활성화
         if (OVRInput.Get(OVRInput.Button.Two, controller))
         {
-
             lineRenderer.enabled = true;
             Debug.DrawRay(transform.position, transform.forward * raycastDistance, Color.red);
             int layerMask = LayerMask.GetMask("Grabbables", "UI");
@@ -59,7 +37,6 @@ public class Pointer : MonoBehaviour
             if (Physics.Raycast(transform.position, transform.forward, out hit, raycastDistance, layerMask))
             {
                 Debug.Log("Hit an object: " + hit.collider.gameObject.name);
-
 
                 lineRenderer.startColor = hitColor;
                 lineRenderer.endColor = hitColor;
@@ -73,25 +50,41 @@ public class Pointer : MonoBehaviour
                 {
                     currentButton = button; // 현재 충돌한 버튼 업데이트
                 }
-                // 아웃라인 스크립트를 찾아 활성화
-                outline = hit.collider.gameObject.GetComponent<Outline>();
-                if (outline != null)
-                {
-                    outline.enabled = true;
-                }
 
                 Toggle toggle = hit.collider.gameObject.GetComponent<Toggle>();
                 if (toggle != null)
                 {
-                    currentToggle = toggle; // 현재 충돌한 버튼 업데이트
+                    currentToggle = toggle; // 현재 충돌한 토글 업데이트
                 }
 
                 Slider slider = hit.collider.gameObject.GetComponent<Slider>();
-                if(slider != null)
+                if (slider != null)
                 {
-                    currentSlider = slider;
+                    currentSlider = slider; // 현재 충돌한 슬라이더 업데이트
                 }
-                // CheckItem(hit);
+
+                // "Item" 태그를 가진 오브젝트 감지 // UI on/off
+                if (hit.collider.CompareTag("Item"))
+                {
+                    GameObject itemObject = hit.collider.gameObject;
+                    if (ItemUi != itemObject)
+                    {
+                        if (ItemUi != null)
+                        {
+                            ItemUi.transform.GetChild(0).gameObject.SetActive(false);
+                        }
+                        ItemUi = itemObject;
+                        ItemUi.transform.GetChild(0).gameObject.SetActive(true);
+                    }
+                }
+                else
+                {
+                    if (ItemUi != null)
+                    {
+                        ItemUi.transform.GetChild(0).gameObject.SetActive(false);
+                        ItemUi = null;
+                    }
+                }
             }
             else
             {
@@ -100,16 +93,17 @@ public class Pointer : MonoBehaviour
                 lineRenderer.SetPosition(1, transform.position + (transform.forward * raycastDistance));
                 lineRenderer.startColor = noHitColor;
                 lineRenderer.endColor = noHitColor;
-                
 
                 // 현재 버튼 초기화
                 currentButton = null;
+                currentToggle = null;
+                currentSlider = null;
 
-                // 아웃라인 스크립트 비활성화
-                if (outline != null)
+                // 현재 Item 초기화 // UI on/off
+                if (ItemUi != null)
                 {
-                    outline.enabled = false;
-                    outline = null;
+                    ItemUi.transform.GetChild(0).gameObject.SetActive(false);
+                    ItemUi = null;
                 }
             }
 
@@ -122,85 +116,28 @@ public class Pointer : MonoBehaviour
                     // 버튼을 클릭
                     currentButton.onClick.Invoke();
                     Debug.Log("Clicked button: " + currentButton.gameObject.name);
-
                 }
-            }
 
-            if(OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, controller))
-            {
-                if(currentToggle != null && currentToggle.IsActive())
+                if (currentToggle != null && currentToggle.IsActive())
                 {
-                    currentToggle.onValueChanged.Invoke(true);
+                    currentToggle.onValueChanged.Invoke(!currentToggle.isOn);
                     Debug.Log("Clicked toggle: " + currentToggle.gameObject.name);
                 }
-            }
 
-            //if(OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, controller))
-            //{
-            //    if(currentSlider != null && currentSlider.IsActive())
-            //    {
-            //        currentSlider.onValueChanged.Invoke();
-            //        Debug.Log("Clicked toggle: " + currentToggle.gameObject.name);
-            //    }
-            //}
+                // Slider 기능 구현은 필요에 따라 추가
+            }
         }
         else
         {
             // 레이캐스트를 비활성화
             lineRenderer.enabled = false;
-            //lineRenderer.SetPosition(1, transform.position + (transform.forward * raycastDistance));
 
-            // 아웃라인 스크립트 비활성화
-            if (outline != null)
+            // 현재 ItemUi 초기화 // UI on/off
+            if (ItemUi != null)
             {
-                outline.enabled = false;
-                outline = null;
+                ItemUi.transform.GetChild(0).gameObject.SetActive(false);
+                ItemUi = null;
             }
-
-            //if (lastHitItem != null)
-            //{
-            //    _itemToolTipTextPerent.transform.GetChild(1).gameObject.SetActive(false);
-            //}
-            //isHit = false;
         }
-
     }
-
-    //private void CheckItem(RaycastHit hit)
-    //{
-    //    if (hit.transform.tag == "Item")        //item 태그를 가지고 있는 것만 인지
-    //    {
-    //        //item오브젝트의 itemProperty 스크립트를 참조
-    //        _itemToolTipTextPerent = hit.transform.parent.gameObject;     //레이캐스트를 통해 충돌한 오브젝트의 부모를 가져오고, 그 부모 오브젝트의 자식 중에서 두 번째 자식을 가져옴
-    //        itemToolTips = _itemToolTipTextPerent.transform.GetChild(1).GetComponentsInChildren<TextProperty>(); //두 번째 자식 오브젝트 아래에 있는 모든 TextProperty 컴포넌트를 가져와서 리스트로 변환
-
-    //        //for (int i = 0; i < itemToolTips.Count; i++)        //itemToolTips리스트에 있는 모든 속성을 가져와 추가
-    //        //{                                                   //ToolTipText ++
-    //        //    textList.Add(itemToolTips[i].ToolTipText);
-    //        //}
-    //        _itemToolTipTextPerent.transform.GetChild(1).gameObject.SetActive(true);
-    //        lastHitItem = hit.transform.GetComponent<ItemProperty>();
-    //        IteminfoApeer(lastHitItem);
-
-    //        isHit = true;
-
-    //    }
-
-
-    //}
-
-    //private void IteminfoApeer(ItemProperty item)
-    //{
-    //    if (!isHit)
-    //    {
-    //        itemToolTips[0].ToolTipText.text = item.itemName;       //Item Name이 먼저
-    //        itemToolTips[1].ToolTipText.text = item.itemCommentry;  //두번째
-    //        Debug.Log("아이템이름 : " + item.itemName
-    //                    + '\n' + "아이템타입 : " + item.itemType); //Consol창 확인용
-    //    }
-
-
-
-    //}
-
 }
