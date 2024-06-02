@@ -103,7 +103,7 @@ public class CanvasOnOff4 : MonoBehaviour
                 || hit.collider.gameObject == SeeTarget3)
             {
                 // 충돌이 발생한 경우 UI 위치를 충돌 지점에서 약간 떨어진 위치로 조정
-                targetPosition = hit.point + hit.normal * 0.3f;
+                //targetPosition = hit.point + hit.normal * 0.3f;
 
                 if (!collided) //충돌 감지
                 {
@@ -126,9 +126,9 @@ public class CanvasOnOff4 : MonoBehaviour
         }
 
         // UI 위치
-        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
-        transform.LookAt(transform.position + Camera2Follow.transform.rotation * Vector3.forward, Camera2Follow.transform.rotation * Vector3.up);
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, target.rotation, 35 * Time.deltaTime);
+        //transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+        //transform.LookAt(transform.position + Camera2Follow.transform.rotation * Vector3.forward, Camera2Follow.transform.rotation * Vector3.up);
+        //transform.rotation = Quaternion.RotateTowards(transform.rotation, target.rotation, 35 * Time.deltaTime);
 
         // 충돌이 감지되었을 때만 활성화
         if (collided)
@@ -253,7 +253,7 @@ public class CanvasOnOff4 : MonoBehaviour
 
     void SceneChange()
     {
-        SceneManager.LoadScene("Main 1");
+        SceneManager.LoadScene("Chapter2");
     }
 
     void Blind()
