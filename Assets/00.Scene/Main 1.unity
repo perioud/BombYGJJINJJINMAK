@@ -7643,6 +7643,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nuc: {fileID: 328054874}
+  bomb: {fileID: 328054881}
+  correct: {fileID: 0}
+  bomb2: {fileID: 0}
+  ch1Bgm: {fileID: 0}
   SeeTarget1: {fileID: 650602625}
   SeeTarget2: {fileID: 2143410487}
   SeeTarget3: {fileID: 1653914658}
@@ -7657,13 +7661,13 @@ MonoBehaviour:
   smoothTime: 0.3
   canvas: {fileID: 319884929}
   canvas2: {fileID: 1180227742}
+  canvas3: {fileID: 0}
   gameOverTime: 30
   actionTimeLimit: 60
   collisionTimeLimit: 30
   actionTimerText: {fileID: 1155377618}
   collisionTimerText: {fileID: 1920759490}
   collisionTimer: {fileID: 1920759488}
-  bomb: {fileID: 328054881}
 --- !u!82 &328054881
 AudioSource:
   m_ObjectHideFlags: 0
@@ -127801,7 +127805,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 846325105}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60d4e68ea4fd9ac4e8478e752a2810e5, type: 3}
   m_Name: 

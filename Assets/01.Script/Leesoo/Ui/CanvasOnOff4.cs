@@ -11,6 +11,11 @@ public class CanvasOnOff4 : MonoBehaviour
 {
     #region MyRegion
     public AudioSource nuc;
+    public AudioSource bomb;
+    public AudioSource correct;
+    public AudioSource bomb2;
+    public AudioSource ch1Bgm;
+    public AudioSource tts;
     public GameObject SeeTarget1;
     public GameObject SeeTarget2;
     public GameObject SeeTarget3;
@@ -30,13 +35,16 @@ public class CanvasOnOff4 : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
     public GameObject canvas;
     public GameObject canvas2;
-    public float gameOverTime = 30f; // 게임오버로 넘어가는 시간
+    public GameObject canvas3;
+    public float gameOverTime = 10f; // 게임오버로 넘어가는 시간
     public float actionTimeLimit = 60f; // 퀘스트 제한 시간 설정
-    public float collisionTimeLimit = 30f; // 충돌 제한 시간 설정
+    public float collisionTimeLimit = 30f; // 실명 제한 시간 설정
     public TMP_Text actionTimerText;
     public TMP_Text collisionTimerText;
     public GameObject collisionTimer;
-    public AudioSource bomb;
+    private bool q3Active = false;
+    private bool readyQ3 = false;
+
     #endregion
 
     void Start()
@@ -44,10 +52,12 @@ public class CanvasOnOff4 : MonoBehaviour
         SeeTarget1.SetActive(true);
         SeeTarget2.SetActive(true);
         SeeTarget3.SetActive(true);
-
+        tts.Play();
+        ch1Bgm.Play();
+        StartCoroutine(FadeInAudio(ch1Bgm, 15f));
         nuc.Play();
         target = Camera2Follow.transform;
-        actionStartTime = Time.time; // 행동 시작 시간 설정
+        actionStartTime = Time.time; 
     }
 
     void Update()
@@ -65,14 +75,17 @@ public class CanvasOnOff4 : MonoBehaviour
             float collisionElapsedTime = Time.time - collisionStartTime;
             float remainingCollisionTime = collisionTimeLimit - collisionElapsedTime;
 
-            // 충돌 제한 시간 표시
-            collisionTimerText.text = "Collision time: " + remainingCollisionTime.ToString("F1") + "s";
+            // 실명 제한 시간 표시
+            collisionTimerText.text = "blind: " + remainingCollisionTime.ToString("F1") + "s";
 
-            // 충돌 게임오버
+            // 실명 게임오버
             if (collisionElapsedTime >= collisionTimeLimit)
             {
                 Debug.Log("Collision time limit reached. Loading GameOver scene.");
-                SceneManager.LoadScene("GameOver");
+                screenFade.FadeOut();
+                Blind();
+                //Invoke("Blind", 1f);
+                
                 return;
             }
         }
@@ -122,6 +135,8 @@ public class CanvasOnOff4 : MonoBehaviour
         {
             Debug.Log("Activating canvas and deactivating canvas2.");
             canvas.SetActive(true);
+            q3Active = false;
+            canvas3.SetActive(false);
             canvas2.SetActive(false);
             button1.SetActive(false);
             button2.SetActive(false);
@@ -133,9 +148,13 @@ public class CanvasOnOff4 : MonoBehaviour
             collisionStartTime = 0f; // 충돌이 감지되지 않으면 타이머 리셋
             Debug.Log("Deactivating canvas and activating canvas2.");
             canvas.SetActive(false);
-            canvas2.SetActive(true);
-            button1.SetActive(true);
-            button2.SetActive(true);
+            if (q3Active == false)
+            {
+                canvas2.SetActive(true);
+                button1.SetActive(true);
+                button2.SetActive(true);
+            }
+
             collisionTimer.SetActive(false);
 
             bool isBothHandsActive = leftInteractorState.Active && rightInteractorState.Active;
@@ -145,10 +164,25 @@ public class CanvasOnOff4 : MonoBehaviour
                 if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.LTouch) ||
                     OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
                 {
-                    // 페이드 아웃 시작
-                    screenFade.FadeOut();
-                    bomb.Play();
-                    Invoke("SceneChange", 5f);
+                    q3Active = true;
+                    correct.Play();
+                    //readyQ3 = true;
+                    canvas2.SetActive(false);
+                    canvas3.SetActive(true);
+                    button1.SetActive(false);
+                    button2.SetActive(false);
+                    Invoke("ReadyQ3", 0.5f);
+
+
+                    //if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.LTouch) &&
+                    //OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
+                    //{
+                    //    // 페이드 아웃 시작
+                    //    screenFade.FadeOut();
+                    //    bomb.Play();
+                    //    Invoke("SceneChange", 5f);
+                    //}
+
                 }
             }
         }
@@ -157,12 +191,79 @@ public class CanvasOnOff4 : MonoBehaviour
         if (remainingActionTime <= 0)
         {
             Debug.Log("Action time limit reached. Loading GameOver scene.");
-            SceneManager.LoadScene("GameOver");
+            screenFade.FadeOut();
+            GameOver();
+            //Invoke("GameOver", 1f);
+          
         }
+
+        if(q3Active && readyQ3 == true)
+        {
+            if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.LTouch) ||
+                        OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
+            {
+                // 페이드 아웃 시작
+                screenFade.FadeOut();
+                correct.Play();
+                bomb2.Play();
+                Invoke("SceneChange", 10f);
+                StartCoroutine(FadeOutAudio(bomb2, 10f));
+                StartCoroutine(FadeOutAudio(ch1Bgm, 10f));
+                StartCoroutine(FadeOutAudio(nuc, 10f));
+
+            }
+        }
+
+
+    }
+    void ReadyQ3()
+    {
+        readyQ3 = true;
+    }
+
+    // 오디오 페이드인
+    IEnumerator FadeInAudio(AudioSource audioSource, float fadeDuration)
+    {
+        audioSource.volume = 0;
+        audioSource.Play();
+
+        for (float t = 0; t < fadeDuration; t += Time.deltaTime)
+        {
+            audioSource.volume = t / fadeDuration;
+            yield return null;
+        }
+
+        audioSource.volume = 1f;
+    }
+
+    // 오디오 페이드아웃
+    IEnumerator FadeOutAudio(AudioSource audioSource, float fadeDuration)
+    {
+        float startVolume = audioSource.volume;
+
+        for (float t = 0; t < fadeDuration; t += Time.deltaTime)
+        {
+            audioSource.volume = startVolume * (1 - t / fadeDuration);
+            yield return null;
+        }
+
+        audioSource.volume = 0;
+        audioSource.Stop();
     }
 
     void SceneChange()
     {
         SceneManager.LoadScene("Main 1");
     }
+
+    void Blind()
+    {
+        SceneManager.LoadScene("blind");
+    }
+
+    void GameOver()
+    {
+        SceneManager.LoadScene("GameOver");
+    }
+
 }

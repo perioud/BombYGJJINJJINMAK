@@ -20,13 +20,13 @@ public class CameraFollow : MonoBehaviour
         // 카메라가 바라보는 방향으로 UI의 목표 위치 설정
         Vector3 targetPosition = target.TransformPoint(new Vector3(0, 0, CameraDistance));
 
-        // 카메라 시야에 있는 벽의 충돌 감지
-        RaycastHit hit;
-        if (Physics.Linecast(target.position, targetPosition, out hit))
-        {
-            // 충돌이 발생한 경우 UI 위치를 충돌 지점에서 약간 떨어진 위치로 조정
-            targetPosition = hit.point + hit.normal * 0.3f;
-        }
+        //// 카메라 시야에 있는 벽의 충돌 감지
+        //RaycastHit hit;
+        //if (Physics.Linecast(target.position, targetPosition, out hit))
+        //{
+        //    // 충돌이 발생한 경우 UI 위치를 충돌 지점에서 약간 떨어진 위치로 조정
+        //    targetPosition = hit.point + hit.normal * 0.3f;
+        //}
 
         // 부드러운 이동을 위해 SmoothDamp 사용하여 UI 이동
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
