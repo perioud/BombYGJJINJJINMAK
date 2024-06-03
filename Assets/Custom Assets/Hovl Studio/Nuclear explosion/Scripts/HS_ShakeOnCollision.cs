@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Oculus.Platform;
 
 public class HS_ShakeOnCollision : MonoBehaviour
 {
@@ -28,16 +27,11 @@ public class HS_ShakeOnCollision : MonoBehaviour
     private AudioSource soundComponent;
     private AudioClip explosionClip;
 
-    private OVRHapticsClip vibrationClip;
-
     void Start()
     {
         soundComponent = GetComponent<AudioSource>();
         explosionClip = soundComponent.clip;
         StartCoroutine(ExplosionShockWave());
-
-        OVRInput.SetControllerVibration(1, 3, OVRInput.Controller.RTouch);
-        OVRInput.SetControllerVibration(1, 3, OVRInput.Controller.LTouch);
     }
 
     public void Update()
@@ -70,14 +64,13 @@ public class HS_ShakeOnCollision : MonoBehaviour
                         cameraShaker = hitCollider.GetComponent<HS_CameraShaker>();
                         StartCoroutine(cameraShaker.Shake(amplitude, frequency, duration, timeRemaining));
                     }
-
                     addedColliders.Add(hitCollider);
                 }
             }
 
             if (explosionFinalRadious <= explosionCurrentRadious)
             {
-                yield return new WaitForSeconds(repeatingTime - shockWaveLifetime);
+                yield return new WaitForSeconds(repeatingTime- shockWaveLifetime);
                 StartCoroutine(ExplosionShockWave());
                 yield break;
             }
