@@ -424,6 +424,10 @@
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
       <Private>False</Private>
@@ -450,10 +454,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Collections.LowLevel.ILSupport">
-      <HintPath>Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">
@@ -992,12 +992,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
@@ -1006,10 +1006,6 @@
     </Reference>
     <Reference Include="Unity.Burst.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.2D.Common.Path.Editor">
@@ -1156,28 +1152,28 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    <Reference Include="Unity.2D.Animation.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Extras">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
+    <Reference Include="Unity.VisualScripting.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.005">
@@ -1192,12 +1188,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Timeline">
@@ -1216,16 +1212,16 @@
       <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.2D.Psdimporter.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Psdimporter.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Mathematics">
@@ -1256,6 +1252,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.2D.IK.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1270,10 +1270,6 @@
       <Project>{E4EC3F0F-D433-6B5F-37F4-D62C101C713B}</Project>
       <Name>Meta.WitAi.Lib</Name>
     </ProjectReference>
-    <ProjectReference Include="Oculus.Interaction.OVR.Editor.csproj">
-      <Project>{692683C1-536C-5787-3164-68CA9A96F05D}</Project>
-      <Name>Oculus.Interaction.OVR.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Facebook.Wit.Dictation.csproj">
       <Project>{5242345D-4F14-9AA5-E038-C87EFE012770}</Project>
       <Name>Facebook.Wit.Dictation</Name>
@@ -1281,6 +1277,10 @@
     <ProjectReference Include="Meta.Voice.Samples.LiveUnderstanding.csproj">
       <Project>{634DA1AD-5F5C-1391-E4A8-C30E78F0FE90}</Project>
       <Name>Meta.Voice.Samples.LiveUnderstanding</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.Interaction.OVR.Editor.csproj">
+      <Project>{692683C1-536C-5787-3164-68CA9A96F05D}</Project>
+      <Name>Oculus.Interaction.OVR.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="VoiceSDK.Runtime.csproj">
       <Project>{3F0A3A24-4B07-0ECE-DC9D-8BFC838A205B}</Project>
@@ -1309,6 +1309,10 @@
     <ProjectReference Include="OccaSoftware.SuperSimpleSkybox.Runtime.csproj">
       <Project>{90E5C627-5960-7990-A77C-9EA54AB5BCD2}</Project>
       <Name>OccaSoftware.SuperSimpleSkybox.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.Voice.Hub.Runtime.csproj">
+      <Project>{1DEC8BA6-C50B-7379-3ED7-48A9B0DEB490}</Project>
+      <Name>Meta.Voice.Hub.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.OVR.csproj">
       <Project>{C28663BC-C09B-135C-EFDA-B593B7AC89B5}</Project>
@@ -1370,10 +1374,6 @@
       <Project>{8E2EA317-304B-DBB3-A64A-5A7B9B16DAE9}</Project>
       <Name>VoiceSDK.Dictation.Runtime</Name>
     </ProjectReference>
-    <ProjectReference Include="Oculus.LipSync.csproj">
-      <Project>{9132F8C8-07A6-C294-137B-009B0280A841}</Project>
-      <Name>Oculus.LipSync</Name>
-    </ProjectReference>
     <ProjectReference Include="Meta.Voice.Samples.Dictation.csproj">
       <Project>{B8A8C03C-1383-3718-7B45-61225405C79E}</Project>
       <Name>Meta.Voice.Samples.Dictation</Name>
@@ -1381,6 +1381,10 @@
     <ProjectReference Include="Meta.WitAi.Conduit.csproj">
       <Project>{F2B355E8-D8D4-3EE5-36BF-5F4795F7B5EB}</Project>
       <Name>Meta.WitAi.Conduit</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.LipSync.csproj">
+      <Project>{9132F8C8-07A6-C294-137B-009B0280A841}</Project>
+      <Name>Oculus.LipSync</Name>
     </ProjectReference>
     <ProjectReference Include="VoiceSDK.Dictation.Editor.csproj">
       <Project>{9E3EF6E6-1536-BA8A-4082-3AEFDCFDD62A}</Project>
@@ -1454,13 +1458,13 @@
       <Project>{1088F0DC-1EC0-917B-3292-2103ED872EE1}</Project>
       <Name>Oculus.AudioManager.Audio.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="OccaSoftware.SuperSimpleSkybox.Editor.csproj">
-      <Project>{0A32C883-05F0-2ABA-E411-9912B6868D01}</Project>
-      <Name>OccaSoftware.SuperSimpleSkybox.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="OccaSoftware.SuperSimpleSkybox.Demo.csproj">
       <Project>{532AB721-4379-3B7C-F19A-26459B1A8FE0}</Project>
       <Name>OccaSoftware.SuperSimpleSkybox.Demo</Name>
+    </ProjectReference>
+    <ProjectReference Include="OccaSoftware.SuperSimpleSkybox.Editor.csproj">
+      <Project>{0A32C883-05F0-2ABA-E411-9912B6868D01}</Project>
+      <Name>OccaSoftware.SuperSimpleSkybox.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Scripts.Editor.csproj">
       <Project>{524010CD-4056-419C-B5FE-9FC7841001F3}</Project>
@@ -1469,10 +1473,6 @@
     <ProjectReference Include="Oculus.Interaction.Samples.Editor.csproj">
       <Project>{444A7A2B-F5F1-8988-40A7-1A3ED17525FB}</Project>
       <Name>Oculus.Interaction.Samples.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Meta.Voice.Hub.Runtime.csproj">
-      <Project>{1DEC8BA6-C50B-7379-3ED7-48A9B0DEB490}</Project>
-      <Name>Meta.Voice.Hub.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="AssistantCoreSDKEditor.csproj">
       <Project>{509B83BA-358E-EC80-4661-E4BB484BE0E1}</Project>

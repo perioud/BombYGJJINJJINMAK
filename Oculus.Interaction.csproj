@@ -187,8 +187,8 @@
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\DistanceGrab\Visuals\DistantInteractionLineRendererVisual.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Input\HMD\HmdRef.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\PoseDetection\Debug\TransformFeatureVectorDebugVisual.cs" />
-    <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Interaction\Models\TouchHandGrab\IHandSphereMap.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Interaction\Models\Snap\ISnapPoseDelegate.cs" />
+    <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Interaction\Models\TouchHandGrab\IHandSphereMap.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Utils\ConeUtils.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Interaction\Models\HandGrab\HandGrabInteractable.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\Scripts\Input\Hands\HandRef.cs" />
@@ -848,6 +848,10 @@
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
       <Private>False</Private>
@@ -874,10 +878,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Collections.LowLevel.ILSupport">
-      <HintPath>Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Android.Types">
