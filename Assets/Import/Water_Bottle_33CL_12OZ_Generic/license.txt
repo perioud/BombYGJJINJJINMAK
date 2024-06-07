@@ -1,0 +1,8 @@
+Model Information:
+* title:	Water Bottle 33CL 12OZ Generic
+* source:	https://sketchfab.com/3d-models/water-bottle-33cl-12oz-generic-3bcbabd26f3c41c18ea5ff08fb9b5995
+* author:	I am Frezzy (https://sketchfab.com/cgivn)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

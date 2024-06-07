@@ -152,7 +152,7 @@ Material:
     - _RefPlane: 0.38
     - _RimPower: 2.5
     - _Scale: 0.16
-    - _Smoothness: 0.915
+    - _Smoothness: 0
     - _SmoothnessPower: 0.5
     - _SmoothnessTextureChannel: 0
     - _SmothnessIntensity: 0.6

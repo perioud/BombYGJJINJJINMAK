@@ -1,0 +1,8 @@
+Model Information:
+* title:	clothes
+* source:	https://sketchfab.com/3d-models/clothes-6fc0cffea8d6402e9ca494c13da600e0
+* author:	Evermotion (https://sketchfab.com/evermotion)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
