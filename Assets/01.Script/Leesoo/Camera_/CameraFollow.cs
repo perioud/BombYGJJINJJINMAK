@@ -30,11 +30,14 @@ public class CameraFollow : MonoBehaviour
 
         // 부드러운 이동을 위해 SmoothDamp 사용하여 UI 이동
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+       
 
         // 카메라를 바라보도록 설정
         transform.LookAt(transform.position + Camera2Follow.transform.rotation * Vector3.forward, Camera2Follow.transform.rotation * Vector3.up);
 
         // UI가 카메라의 회전을 따르도록 설정
         transform.rotation = Quaternion.RotateTowards(transform.rotation, target.rotation, 35 * Time.deltaTime);
+
+        
     }
 }

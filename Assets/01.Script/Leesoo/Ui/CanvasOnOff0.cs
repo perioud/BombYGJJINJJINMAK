@@ -13,13 +13,6 @@ public class CanvasOnOff0 : MonoBehaviour
 
     private bool actionPerformed = false;
 
-    public AudioSource tts;
-    public AudioSource correct;
-    void Start()
-    {
-        tts.Play();
-    }
-
 
     void Update()
     {
@@ -61,10 +54,5 @@ public class CanvasOnOff0 : MonoBehaviour
         {
             nextCanvasToShow.SetActive(true);
         }
-    }
-
-    void PlayAudio()
-    {
-        correct.Play();
     }
 }

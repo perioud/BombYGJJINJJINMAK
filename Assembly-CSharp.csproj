@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\RequestCaptureFlow.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Firebase\StartCrashlytics.cs" />
+    <Compile Include="Assets\01.Script\Leesoo\Items\DLog.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\GrabbableCrosshair.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\AppDeeplink\AppDeeplinkUI.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\ColorGrabbable.cs" />
@@ -207,6 +208,7 @@
     <Compile Include="Assets\01.Script\Leesoo\Camera_\CameraTracking.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportOrientationHandlerHMD.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\TouchPro\Scripts\Ui\UiVectorInspector.cs" />
+    <Compile Include="Assets\01.Script\Leesoo\Indicator\NextArrow.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\GrabManager.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\DebugUI\DebugUISample.cs" />
     <Compile Include="Assets\01.Script\Leesoo\Camera_\CameraFollow.cs" />
@@ -237,7 +239,9 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SelectivePassthroughExperience.cs" />
     <Compile Include="Assets\01.Script\PlayTV.cs" />
     <Compile Include="Assets\Other\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\01.Script\Leesoo\Camera_\CameraArrowFollow.cs" />
     <Compile Include="Assets\01.Script\SeeNuc.cs" />
+    <Compile Include="Assets\01.Script\Leesoo\Indicator\Arrow2.cs" />
     <Compile Include="Assets\ObjectFallForward.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\SimpleResizer\SimpleResizable.cs" />
     <Compile Include="Assets\01.Script\Leesoo\Ui\TextProperty.cs" />
