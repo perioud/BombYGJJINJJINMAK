@@ -44,11 +44,14 @@ public class CanvasOnOff4 : MonoBehaviour
     public GameObject collisionTimer;
     private bool q3Active = false;
     private bool readyQ3 = false;
+    public GameObject UICam;
+    private bool fadeOut;
 
     #endregion
 
     void Start()
     {
+        fadeOut = false;
         SeeTarget1.SetActive(true);
         SeeTarget2.SetActive(true);
         SeeTarget3.SetActive(true);
@@ -79,14 +82,22 @@ public class CanvasOnOff4 : MonoBehaviour
             collisionTimerText.text = "blind: " + remainingCollisionTime.ToString("F1") + "s";
 
             // 실명 게임오버
-            if (collisionElapsedTime >= collisionTimeLimit)
+            if (collisionElapsedTime >= collisionTimeLimit && !fadeOut)
             {
                 Debug.Log("Collision time limit reached. Loading GameOver scene.");
+
+                UICam.SetActive(false);
                 screenFade.FadeOut();
-                Blind();
-                //Invoke("Blind", 1f);
+                StartCoroutine(FadeOutAudio(ch1Bgm, 2f));
+                StartCoroutine(FadeOutAudio(nuc, 2f));
+                FadeOut();
+                fadeOut = true;
+                //screenFade.FadeOut();
                 
-                return;
+                //Blind();
+                Invoke("Blind", 3f);
+                
+                //return;
             }
         }
 
@@ -188,21 +199,36 @@ public class CanvasOnOff4 : MonoBehaviour
         }
 
         // 1분 제한 시간이 초과하면 게임오버
-        if (remainingActionTime <= 0)
+        if (remainingActionTime <= 0 && !fadeOut)
         {
             Debug.Log("Action time limit reached. Loading GameOver scene.");
-            screenFade.FadeOut();
-            GameOver();
-            //Invoke("GameOver", 1f);
-          
+            
+
+            if (screenFade != null)
+            {
+                UICam.SetActive(false);
+                Debug.Log("Calling screenFade.FadeOut()");
+                actionTimerText.text = "";
+                StartCoroutine(FadeOutAudio(ch1Bgm, 2f));
+                StartCoroutine(FadeOutAudio(nuc, 2f));
+                screenFade.FadeOut();
+                FadeOut();
+                fadeOut = true;          
+                Invoke("GameOver", 3f);
+            }
+            else
+            {
+                Debug.LogError("screenFade is null! Please check the initialization of screenFade.");
+            }
         }
 
-        if(q3Active && readyQ3 == true)
+        if (q3Active && readyQ3 == true)
         {
             if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.LTouch) ||
                         OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
             {
                 // 페이드 아웃 시작
+                UICam.SetActive(false);
                 screenFade.FadeOut();
                 correct.Play();
                 bomb2.Play();
@@ -264,6 +290,15 @@ public class CanvasOnOff4 : MonoBehaviour
     void GameOver()
     {
         SceneManager.LoadScene("GameOver");
+    }
+
+    void FadeOut()
+    {
+        if(fadeOut == true)
+        {
+            screenFade.FadeOut();
+        }
+        
     }
 
 }

@@ -455,6 +455,14 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1664460804}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5792917105168724594, guid: 8a9735fa3959e3541abe5df969f11cc3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1857829514}
+    - targetCorrespondingSourceObject: {fileID: 8174070985051495643, guid: 8a9735fa3959e3541abe5df969f11cc3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1857829515}
     - targetCorrespondingSourceObject: {fileID: 8174070985051495641, guid: 8a9735fa3959e3541abe5df969f11cc3,
         type: 3}
       insertIndex: -1
@@ -1676,6 +1684,47 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1838353971}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1857829512 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5792917105168724594, guid: 8a9735fa3959e3541abe5df969f11cc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 98752791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1857829513 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8174070985051495643, guid: 8a9735fa3959e3541abe5df969f11cc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 98752791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1857829514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857829512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d26f5575ee14ce4d9bfb5abfd9dfd87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenFade: {fileID: 1857829515}
+--- !u!114 &1857829515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857829513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8e1d778abf442e4bec449c360e9e1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeTime: 2
+  fadeColor: {r: 0.01, g: 0.01, b: 0.01, a: 1}
+  fadeOnStart: 1
+  renderQueue: 5000
 --- !u!1 &1946036002
 GameObject:
   m_ObjectHideFlags: 0

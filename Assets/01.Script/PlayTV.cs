@@ -16,6 +16,7 @@ public class PlayTV : MonoBehaviour
     private GameObject newsPlayer;
 
     private bool videoPrepared = false;
+    public GameObject Arrow;
 
     void Start()
     {
@@ -50,6 +51,7 @@ public class PlayTV : MonoBehaviour
         bool isActive = ActiveState.Active;
         if(isActive == true)
         {
+            Arrow.SetActive(false);
             if (OVRInput.GetDown(OVRInput.Button.One, controller))
             {
                 if (newsPlayer.transform.GetChild(0).gameObject.activeSelf)
@@ -63,6 +65,10 @@ public class PlayTV : MonoBehaviour
 
             }
         }
+        //else
+        //{
+        //    Arrow.SetActive(true);
+        //}
 
     }
 
