@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: e743cedec9cbd60499b4ce715f2500bc, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: bab3aad9162e5af4586ed54dd44bbafc, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -7647,6 +7647,7 @@ MonoBehaviour:
   correct: {fileID: 0}
   bomb2: {fileID: 0}
   ch1Bgm: {fileID: 0}
+  tts: {fileID: 0}
   SeeTarget1: {fileID: 650602625}
   SeeTarget2: {fileID: 2143410487}
   SeeTarget3: {fileID: 1653914658}
@@ -7668,6 +7669,7 @@ MonoBehaviour:
   actionTimerText: {fileID: 1155377618}
   collisionTimerText: {fileID: 1920759490}
   collisionTimer: {fileID: 1920759488}
+  UICam: {fileID: 0}
 --- !u!82 &328054881
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12066,8 +12068,6 @@ MonoBehaviour:
   canvasToDisable: {fileID: 521425256}
   nextCanvasToShow: {fileID: 1435114797}
   delayTime: 1.5
-  tts: {fileID: 521425258}
-  correct: {fileID: 521425259}
 --- !u!114 &521425261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23653,6 +23653,75 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1622792020}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1112520049
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 9821f61cd29cd1f4cb0ee51806a24535,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9821f61cd29cd1f4cb0ee51806a24535,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9821f61cd29cd1f4cb0ee51806a24535,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.253
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9821f61cd29cd1f4cb0ee51806a24535,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9821f61cd29cd1f4cb0ee51806a24535,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9821f61cd29cd1f4cb0ee51806a24535,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9821f61cd29cd1f4cb0ee51806a24535,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9821f61cd29cd1f4cb0ee51806a24535,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9821f61cd29cd1f4cb0ee51806a24535,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9821f61cd29cd1f4cb0ee51806a24535,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9821f61cd29cd1f4cb0ee51806a24535,
+        type: 3}
+      propertyPath: m_Name
+      value: Meta_LocomotionBalcony
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 4992462760703050623, guid: 9821f61cd29cd1f4cb0ee51806a24535, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9821f61cd29cd1f4cb0ee51806a24535, type: 3}
 --- !u!1 &1113997748 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1046798197827500, guid: 85a13b732c2899b469e6ab5c48300bec,
@@ -25395,8 +25464,6 @@ MonoBehaviour:
   canvasToDisable: {fileID: 1832025168}
   nextCanvasToShow: {fileID: 1435114797}
   delayTime: 1.5
-  tts: {fileID: 0}
-  correct: {fileID: 1832025171}
 --- !u!1 &1193322936
 GameObject:
   m_ObjectHideFlags: 0
@@ -41310,8 +41377,6 @@ MonoBehaviour:
   canvasToDisable: {fileID: 1832025168}
   nextCanvasToShow: {fileID: 1435114797}
   delayTime: 1.5
-  tts: {fileID: 1832025170}
-  correct: {fileID: 1832025171}
 --- !u!114 &1832025173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127935,3 +128000,4 @@ SceneRoots:
   - {fileID: 2143410489}
   - {fileID: 1802623897525854038}
   - {fileID: 6733486622257014962}
+  - {fileID: 1112520049}
