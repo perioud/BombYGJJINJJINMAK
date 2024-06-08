@@ -8,10 +8,12 @@ public class ToggleButton : MonoBehaviour
     public Toggle toggle;
     public GameObject targetObject;
     public GameObject targetObject2;
+    public AudioSource audioSource;
 
     private void Start()
     {
         toggle.onValueChanged.AddListener(OnToggleChanged);
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void OnToggleChanged(bool isOn)
@@ -21,6 +23,7 @@ public class ToggleButton : MonoBehaviour
             Debug.Log("ON");
             targetObject.SetActive(true);
             targetObject2.SetActive(true);
+            audioSource.Play();
         }
         else
         {

@@ -6,8 +6,11 @@ using UnityEngine.UI;
 public class TTSStart : MonoBehaviour
 {
     public AudioSource tts;
+    public AudioSource correct;
+
     void Start()
     {
         tts.Play();
+        correct.Play();
     }
 }

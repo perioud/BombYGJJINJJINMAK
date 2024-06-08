@@ -9,6 +9,12 @@ TagManager:
   - SamplesInfoPanel
   - Item
   - Floor
+  - Inventory
+  - OBJUmbrella
+  - OBJMask
+  - OBJClothes
+  - OBJHat
+  - End
   layers:
   - Default
   - TransparentFX
