@@ -14,21 +14,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/00.Scene/GameOver.unity
     guid: 370df4408c3b08347a64c9e78c7a0594
-  - enabled: 0
-    path: Assets/00.Scene/Object Scene.unity
-    guid: faf6cd749b13d904b8b4e7dba232932d
   - enabled: 1
     path: Assets/00.Scene/MainQuest.unity
     guid: 2be2c35bf93ebb94b9eb443c0e8b7416
   - enabled: 1
     path: Assets/00.Scene/Chapter2.unity
-    guid: 7d114f3dc53f8084aba53aaa9c300b69
+    guid: c19438f7d5ab3a34887242cdb764a4b0
   - enabled: 1
     path: Assets/00.Scene/Main 1.unity
     guid: 126f215fb50f94a4f9c21cfb4e8a7efd
   - enabled: 1
     path: Assets/00.Scene/blind.unity
     guid: b7365f79e093e714da38202b70edb01e
+  - enabled: 1
+    path: Assets/00.Scene/Ending Scene.unity
+    guid: fc47ff84848b2b04ca0cf96a53caa0bb
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5a647b5c624184d4fbe78a30e2dd81e5,
       type: 2}

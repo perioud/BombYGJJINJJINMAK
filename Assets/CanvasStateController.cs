@@ -19,7 +19,7 @@ public class CanvasStateController : MonoBehaviour
         bool isCanvasActive = targetCanvas.gameObject.activeSelf;
 
         // Canvas가 비활성화되었고 이전에는 활성화 상태였을 때
-        if (!isCanvasActive && wasCanvasActive)
+        if (isCanvasActive)
         {
             ActivateOutline();
         }

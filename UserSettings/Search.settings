@@ -11,6 +11,9 @@ scopes = {
 	"last_search.E8DA15E5" = ""
 	"OpenInspectorPreview.E8DA15E5" = "0"
 	"currentGroup.E8DA15E5" = "all"
+	"last_search.3BE40471" = "capsule collider"
+	"OpenInspectorPreview.3BE40471" = "0"
+	"currentGroup.3BE40471" = "all"
 }
 providers = {
 	scene = {
@@ -62,6 +65,12 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	""
+	"h: t:TimerUIControl"
+	"h: t:TimerDisplay"
+	"h: t:CameraFollow"
+	"h: t:TimerController"
+	"h: t:TestScript"
 ]
 searchItemFavorites = [
 ]
@@ -70,9 +79,9 @@ showSavedSearchPanel = false
 hideTabs = false
 expandedQueries = [
 ]
-queryBuilder = false
+queryBuilder = true
 ignoredProperties = "id;name;classname;imagecontentshash"
-helperWidgetCurrentArea = "all"
+helperWidgetCurrentArea = "h:"
 disabledIndexers = ""
 minIndexVariations = 2
 findProviderIndexHelper = true
