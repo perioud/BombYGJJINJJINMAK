@@ -64,7 +64,7 @@ public class Pointer : MonoBehaviour
                 }
 
                 // "Item" 태그를 가진 오브젝트 감지 // UI on/off
-                if (hit.collider.CompareTag("Item"))
+                if (hit.collider.CompareTag("Item") || hit.collider.CompareTag("Fresh"))
                 {
                     GameObject itemObject = hit.collider.gameObject;
                     if (ItemUi != itemObject)
