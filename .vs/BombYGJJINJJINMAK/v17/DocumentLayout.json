@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F1B17FC-9219-2307-1D83-98F3E9E6CAE2}|Assembly-CSharp.csproj|C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\assets\\objectfallforward.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F1B17FC-9219-2307-1D83-98F3E9E6CAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\objectfallforward.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8F1B17FC-9219-2307-1D83-98F3E9E6CAE2}|Assembly-CSharp.csproj|C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\assets\\01.script\\leesoo\\ui\\canvasonoff4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F1B17FC-9219-2307-1D83-98F3E9E6CAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\01.script\\leesoo\\ui\\canvasonoff4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F1B17FC-9219-2307-1D83-98F3E9E6CAE2}|Assembly-CSharp.csproj|C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\assets\\01.script\\pointer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F1B17FC-9219-2307-1D83-98F3E9E6CAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\01.script\\pointer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F1B17FC-9219-2307-1D83-98F3E9E6CAE2}|Assembly-CSharp.csproj|c:\\users\\jkjk0\\desktop\\unitygit\\bombygjjinjjinmak\\assets\\objectfallforward.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F1B17FC-9219-2307-1D83-98F3E9E6CAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\objectfallforward.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F1B17FC-9219-2307-1D83-98F3E9E6CAE2}|Assembly-CSharp.csproj|C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\assets\\activeoutline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,7 +35,7 @@
       "RelativeMoniker": "D:0:0:{8F1B17FC-9219-2307-1D83-98F3E9E6CAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\01.script\\leesoo\\items\\inventoryvr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7FFA93-CE99-8BF5-1445-8E8785612B41}|Oculus.VR.csproj|c:\\users\\jkjk0\\desktop\\unitygit\\bombygjjinjjinmak\\assets\\oculus\\vr\\scripts\\util\\ovrscreenfade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E7FFA93-CE99-8BF5-1445-8E8785612B41}|Oculus.VR.csproj|C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\assets\\oculus\\vr\\scripts\\util\\ovrscreenfade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E7FFA93-CE99-8BF5-1445-8E8785612B41}|Oculus.VR.csproj|solutionrelative:assets\\oculus\\vr\\scripts\\util\\ovrscreenfade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -194,17 +194,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CanvasOnOff4.cs",
               "DocumentMoniker": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\01.Script\\Leesoo\\Ui\\CanvasOnOff4.cs",
               "RelativeDocumentMoniker": "Assets\\01.Script\\Leesoo\\Ui\\CanvasOnOff4.cs",
               "ToolTip": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\01.Script\\Leesoo\\Ui\\CanvasOnOff4.cs",
               "RelativeToolTip": "Assets\\01.Script\\Leesoo\\Ui\\CanvasOnOff4.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJsAAAA9AAAA",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAIwLMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T22:44:24.833Z",
               "EditorCaption": ""
@@ -219,8 +219,7 @@
               "RelativeToolTip": "Assets\\01.Script\\Leesoo\\Items\\InventoryVR.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAA8wAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T13:59:10.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T13:59:10.629Z"
             },
             {
               "$type": "Document",
@@ -232,8 +231,7 @@
               "RelativeToolTip": "Assets\\01.Script\\Leesoo\\Items\\Inventory.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T13:58:47.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T13:58:47.51Z"
             },
             {
               "$type": "Document",
@@ -245,18 +243,17 @@
               "RelativeToolTip": "Assets\\01.Script\\Leesoo\\Items\\ItemProperty.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T13:57:54.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T13:57:54.515Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Pointer.cs",
               "DocumentMoniker": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\01.Script\\Pointer.cs",
               "RelativeDocumentMoniker": "Assets\\01.Script\\Pointer.cs",
               "ToolTip": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\01.Script\\Pointer.cs",
               "RelativeToolTip": "Assets\\01.Script\\Pointer.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAqwCAAAAA+AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-08T15:56:33.362Z",
               "EditorCaption": ""
@@ -271,8 +268,7 @@
               "RelativeToolTip": "Assets\\Oculus\\Interaction\\Runtime\\Scripts\\Interaction\\Core\\InteractorActiveState.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAUwCoAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T13:25:30.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T13:25:30.418Z"
             },
             {
               "$type": "Document",
@@ -284,8 +280,7 @@
               "RelativeToolTip": "Assets\\ActiveOutline.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T13:20:34.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T13:20:34.413Z"
             },
             {
               "$type": "Document",
@@ -333,12 +328,11 @@
               "RelativeToolTip": "Assets\\Oculus\\VR\\Scripts\\Util\\OVRScreenFade.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAkwDEAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T01:32:25.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T01:32:25.885Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ObjectFallForward.cs",
               "DocumentMoniker": "C:\\Users\\jkjk0\\Desktop\\UnityGIt\\BombYGJJINJJINMAK\\Assets\\ObjectFallForward.cs",
               "RelativeDocumentMoniker": "Assets\\ObjectFallForward.cs",
