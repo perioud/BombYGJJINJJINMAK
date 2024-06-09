@@ -100,7 +100,7 @@ using System.Collections;
 public class EndingScene : MonoBehaviour
 {
     public OVRInput.Controller controller;
-    public float fadeDuration = 2.0f; // 페이드 아웃 지속 시간
+    public float fadeDuration = 4.0f; // 페이드 아웃 지속 시간
 
     private bool isColliding = false; // 충돌 상태를 추적하기 위한 변수
 
@@ -112,7 +112,7 @@ public class EndingScene : MonoBehaviour
             if (OVRScreenFade.instance != null)
             {
                 OVRScreenFade.instance.FadeOut();
-                StartCoroutine(WaitAndLoadScene(7, fadeDuration));
+                StartCoroutine(WaitAndLoadScene(8, fadeDuration));
             }
             else
             {

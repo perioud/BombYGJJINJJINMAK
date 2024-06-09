@@ -83,6 +83,7 @@
     <Compile Include="Assets\01.Script\Leesoo\LookAt.cs" />
     <Compile Include="Assets\01.Script\ChangeColorOnClick.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Scripts\MediaPlayerImage.cs" />
+    <Compile Include="Assets\TriggerUICanvas.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\SelectionCylinder.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainCrossingController.cs" />
     <Compile Include="Assets\01.Script\CanvasController.cs" />
@@ -269,6 +270,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTargetHandlerNavMesh.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Locomotion\Scripts\LocomotionSampleSupport.cs" />
     <Compile Include="Assets\01.Script\UIS\CheckmarkManager.cs" />
+    <Compile Include="Assets\Subway Environment\scenes\Fly.cs" />
     <Compile Include="Assets\01.Script\Leesoo\Items\GetItemName.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\BouncingBallLogic.cs" />
     <Compile Include="Assets\01.Script\QuestButton.cs" />
@@ -343,6 +345,7 @@
     <None Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Shaders\OculusSampleAlphaHandOutline.shader" />
     <None Include="Assets\Other\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Custom Assets\Scandinavian Interior Archviz\Shaders\Env.shader" />
+    <None Include="Assets\Subway Environment\Assets\shaders\EmissiveShader.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials\GlowEffect.shader" />
     <None Include="Assets\Oculus\Voice\Features\Telemetry\Plugins\SDKTelemetry.dll" />
     <None Include="Assets\Other\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
@@ -365,6 +368,7 @@
     <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Materials\Hands_Transparent.shader" />
     <None Include="Assets\Other\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Shaders\StylizedOcclusions.shader" />
+    <None Include="Assets\Subway Environment\Assets\shaders\SubwayNormal.shader" />
     <None Include="Assets\Import\clothes\license.txt" />
     <None Include="Assets\Custom Assets\Hovl Studio\Nuclear explosion\Shaders\SoftNoise.shader" />
     <None Include="Assets\Other\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
