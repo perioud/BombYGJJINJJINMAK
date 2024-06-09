@@ -1918,6 +1918,7 @@ MonoBehaviour:
   toggle: {fileID: 0}
   targetObject: {fileID: 0}
   targetObject2: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!114 &89457641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4500,6 +4501,7 @@ MonoBehaviour:
   toggle: {fileID: 1254065840}
   targetObject: {fileID: 1802123007}
   targetObject2: {fileID: 519325394}
+  audioSource: {fileID: 0}
 --- !u!114 &214365087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5897,6 +5899,7 @@ MonoBehaviour:
   toggle: {fileID: 89457639}
   targetObject: {fileID: 1083545833}
   targetObject2: {fileID: 1956004427}
+  audioSource: {fileID: 0}
 --- !u!114 &249250986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6219,6 +6222,7 @@ MonoBehaviour:
   toggle: {fileID: 1978215620}
   targetObject: {fileID: 510160356}
   targetObject2: {fileID: 1447929134}
+  audioSource: {fileID: 0}
 --- !u!114 &259557653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8199,6 +8203,7 @@ MonoBehaviour:
   toggle: {fileID: 369992894}
   targetObject: {fileID: 1131509471}
   targetObject2: {fileID: 1000292622}
+  audioSource: {fileID: 0}
 --- !u!65 &369992893
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16171,6 +16176,7 @@ MonoBehaviour:
   toggle: {fileID: 1477726194}
   targetObject: {fileID: 1309724588}
   targetObject2: {fileID: 694478442}
+  audioSource: {fileID: 0}
 --- !u!114 &695668448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23475,6 +23481,7 @@ MonoBehaviour:
   toggle: {fileID: 0}
   targetObject: {fileID: 0}
   targetObject2: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!114 &1098622131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23653,75 +23660,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1622792020}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1112520049
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 9821f61cd29cd1f4cb0ee51806a24535,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -8.384
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9821f61cd29cd1f4cb0ee51806a24535,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9821f61cd29cd1f4cb0ee51806a24535,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.253
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9821f61cd29cd1f4cb0ee51806a24535,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9821f61cd29cd1f4cb0ee51806a24535,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9821f61cd29cd1f4cb0ee51806a24535,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9821f61cd29cd1f4cb0ee51806a24535,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9821f61cd29cd1f4cb0ee51806a24535,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9821f61cd29cd1f4cb0ee51806a24535,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9821f61cd29cd1f4cb0ee51806a24535,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 9821f61cd29cd1f4cb0ee51806a24535,
-        type: 3}
-      propertyPath: m_Name
-      value: Meta_LocomotionBalcony
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 4992462760703050623, guid: 9821f61cd29cd1f4cb0ee51806a24535, type: 3}
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9821f61cd29cd1f4cb0ee51806a24535, type: 3}
 --- !u!1 &1113997748 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1046798197827500, guid: 85a13b732c2899b469e6ab5c48300bec,
@@ -26849,6 +26787,7 @@ MonoBehaviour:
   toggle: {fileID: 0}
   targetObject: {fileID: 0}
   targetObject2: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!114 &1254065842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31348,6 +31287,7 @@ MonoBehaviour:
   toggle: {fileID: 0}
   targetObject: {fileID: 0}
   targetObject2: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!114 &1457843913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31933,6 +31873,7 @@ MonoBehaviour:
   toggle: {fileID: 0}
   targetObject: {fileID: 0}
   targetObject2: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!114 &1477726196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32023,6 +31964,7 @@ MonoBehaviour:
   toggle: {fileID: 1680102259}
   targetObject: {fileID: 334287099}
   targetObject2: {fileID: 1320584068}
+  audioSource: {fileID: 0}
 --- !u!114 &1477962640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36743,6 +36685,7 @@ MonoBehaviour:
   toggle: {fileID: 0}
   targetObject: {fileID: 0}
   targetObject2: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!114 &1680102261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44630,6 +44573,7 @@ MonoBehaviour:
   toggle: {fileID: 0}
   targetObject: {fileID: 0}
   targetObject2: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!114 &1978215622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44891,6 +44835,7 @@ MonoBehaviour:
   toggle: {fileID: 1098622129}
   targetObject: {fileID: 1285981700}
   targetObject2: {fileID: 1984011261}
+  audioSource: {fileID: 0}
 --- !u!114 &2001192482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46406,6 +46351,7 @@ MonoBehaviour:
   toggle: {fileID: 1457843911}
   targetObject: {fileID: 791222101}
   targetObject2: {fileID: 1134009630}
+  audioSource: {fileID: 0}
 --- !u!114 &2063827054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117868,7 +117814,7 @@ PrefabInstance:
     - target: {fileID: 5792917105168494172, guid: 8a9735fa3959e3541abe5df969f11cc3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.47
+      value: -7.607159
       objectReference: {fileID: 0}
     - target: {fileID: 5792917105168494172, guid: 8a9735fa3959e3541abe5df969f11cc3,
         type: 3}
@@ -117878,12 +117824,12 @@ PrefabInstance:
     - target: {fileID: 5792917105168494172, guid: 8a9735fa3959e3541abe5df969f11cc3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.3
+      value: -4.902475
       objectReference: {fileID: 0}
     - target: {fileID: 5792917105168494172, guid: 8a9735fa3959e3541abe5df969f11cc3,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.22834046
+      value: -0.6950688
       objectReference: {fileID: 0}
     - target: {fileID: 5792917105168494172, guid: 8a9735fa3959e3541abe5df969f11cc3,
         type: 3}
@@ -117893,7 +117839,7 @@ PrefabInstance:
     - target: {fileID: 5792917105168494172, guid: 8a9735fa3959e3541abe5df969f11cc3,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9735814
+      value: 0.71894324
       objectReference: {fileID: 0}
     - target: {fileID: 5792917105168494172, guid: 8a9735fa3959e3541abe5df969f11cc3,
         type: 3}
@@ -117908,7 +117854,7 @@ PrefabInstance:
     - target: {fileID: 5792917105168494172, guid: 8a9735fa3959e3541abe5df969f11cc3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 153.601
+      value: 268.065
       objectReference: {fileID: 0}
     - target: {fileID: 5792917105168494172, guid: 8a9735fa3959e3541abe5df969f11cc3,
         type: 3}
@@ -128000,4 +127946,3 @@ SceneRoots:
   - {fileID: 2143410489}
   - {fileID: 1802623897525854038}
   - {fileID: 6733486622257014962}
-  - {fileID: 1112520049}

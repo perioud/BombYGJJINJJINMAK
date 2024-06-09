@@ -1,15 +1,14 @@
-using Oculus.Interaction;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
-using UnityEngine.Video;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
+using Oculus.Interaction;
 
 public class CanvasOnOff4 : MonoBehaviour
 {
-    #region MyRegion
+    #region Variables
     public AudioSource nuc;
     public AudioSource bomb;
     public AudioSource correct;
@@ -19,6 +18,7 @@ public class CanvasOnOff4 : MonoBehaviour
     public GameObject SeeTarget1;
     public GameObject SeeTarget2;
     public GameObject SeeTarget3;
+    public GameObject SeeTarget4;
     public GameObject button1;
     public GameObject button2;
     public InteractorActiveState leftInteractorState;
@@ -46,7 +46,10 @@ public class CanvasOnOff4 : MonoBehaviour
     private bool readyQ3 = false;
     public GameObject UICam;
     private bool fadeOut;
+    public Volume volume; 
+    private ColorAdjustments colorAdjustments; 
 
+    private Coroutine colorChangeCoroutine;
     #endregion
 
     void Start()
@@ -60,12 +63,21 @@ public class CanvasOnOff4 : MonoBehaviour
         StartCoroutine(FadeInAudio(ch1Bgm, 15f));
         nuc.Play();
         target = Camera2Follow.transform;
-        actionStartTime = Time.time; 
+        actionStartTime = Time.time;
+
+        
+        if (volume.profile.TryGet(out colorAdjustments))
+        {
+            colorAdjustments.active = true;
+        }
+        else
+        {
+            Debug.LogError("Color Adjustments not found in Volume profile.");
+        }
     }
 
     void Update()
     {
-        
         float elapsedTime = Time.time - actionStartTime;
         float remainingActionTime = actionTimeLimit - elapsedTime;
 
@@ -92,16 +104,13 @@ public class CanvasOnOff4 : MonoBehaviour
                 StartCoroutine(FadeOutAudio(nuc, 2f));
                 FadeOut();
                 fadeOut = true;
-                //screenFade.FadeOut();
-                
-                //Blind();
+
+                // 화면 색상 변경 시작
+                //StartCoroutine(ChangeColorOverTime(Color.red, 1f));
                 Invoke("Blind", 3f);
-                
-                //return;
             }
         }
 
-        
         Vector3 targetPosition = target.TransformPoint(new Vector3(0, 0, CameraDistance));
 
         // Raycast를 통해 충돌 감지
@@ -111,37 +120,45 @@ public class CanvasOnOff4 : MonoBehaviour
             Debug.Log("Raycast hit: " + hit.collider.gameObject.name);
             // 충돌한 오브젝트가 지정한 오브젝트의 콜라이더인지 확인
             if (hit.collider.gameObject == SeeTarget1 || hit.collider.gameObject == SeeTarget2
-                || hit.collider.gameObject == SeeTarget3)
+                || hit.collider.gameObject == SeeTarget3 || hit.collider.gameObject == SeeTarget4 || hit.collider.tag.Equals("SeeTarget"))
             {
-                // 충돌이 발생한 경우 UI 위치를 충돌 지점에서 약간 떨어진 위치로 조정
-                //targetPosition = hit.point + hit.normal * 0.3f;
-
                 if (!collided) //충돌 감지
                 {
                     collided = true;
                     collisionStartTime = Time.time; // 충돌 시작 시간
+                    colorChangeCoroutine = StartCoroutine(BlinkColor(new Color32(255, 180, 180, 255), Color.white, 1f)); // 충돌 시 색상 변경 시작
                 }
 
                 Debug.Log("Collision detected with target.");
             }
             else
             {
-                collided = false; 
+                //if (collided) // 충돌 종료 시 색상 복원
+                //{
+                //    StopCoroutine(colorChangeCoroutine);
+                //    StartCoroutine(ChangeColorOverTime(Color.white, 0.1f));
+                //}
+                StopCoroutine(colorChangeCoroutine);
+                StartCoroutine(ChangeColorOverTime(Color.white, 1f));
+                collided = false;
                 Debug.Log("No collision with target.");
+
             }
         }
         else
         {
-            collided = false; 
+            //if (collided) // 충돌 종료 시 색상 복원
+            //{
+            //    StopCoroutine(colorChangeCoroutine);
+            //    StartCoroutine(ChangeColorOverTime(Color.white, 0.1f));
+            //}
+            StopCoroutine(colorChangeCoroutine);
+            StartCoroutine(ChangeColorOverTime(Color.white, 1f));
+            collided = false;
             Debug.Log("No collision detected.");
         }
 
         // UI 위치
-        //transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
-        //transform.LookAt(transform.position + Camera2Follow.transform.rotation * Vector3.forward, Camera2Follow.transform.rotation * Vector3.up);
-        //transform.rotation = Quaternion.RotateTowards(transform.rotation, target.rotation, 35 * Time.deltaTime);
-
-        // 충돌이 감지되었을 때만 활성화
         if (collided)
         {
             Debug.Log("Activating canvas and deactivating canvas2.");
@@ -177,23 +194,11 @@ public class CanvasOnOff4 : MonoBehaviour
                 {
                     q3Active = true;
                     correct.Play();
-                    //readyQ3 = true;
                     canvas2.SetActive(false);
                     canvas3.SetActive(true);
                     button1.SetActive(false);
                     button2.SetActive(false);
                     Invoke("ReadyQ3", 0.5f);
-
-
-                    //if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.LTouch) &&
-                    //OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
-                    //{
-                    //    // 페이드 아웃 시작
-                    //    screenFade.FadeOut();
-                    //    bomb.Play();
-                    //    Invoke("SceneChange", 5f);
-                    //}
-
                 }
             }
         }
@@ -202,7 +207,6 @@ public class CanvasOnOff4 : MonoBehaviour
         if (remainingActionTime <= 0 && !fadeOut)
         {
             Debug.Log("Action time limit reached. Loading GameOver scene.");
-            
 
             if (screenFade != null)
             {
@@ -213,7 +217,7 @@ public class CanvasOnOff4 : MonoBehaviour
                 StartCoroutine(FadeOutAudio(nuc, 2f));
                 screenFade.FadeOut();
                 FadeOut();
-                fadeOut = true;          
+                fadeOut = true;
                 Invoke("GameOver", 3f);
             }
             else
@@ -236,15 +240,37 @@ public class CanvasOnOff4 : MonoBehaviour
                 StartCoroutine(FadeOutAudio(bomb2, 10f));
                 StartCoroutine(FadeOutAudio(ch1Bgm, 10f));
                 StartCoroutine(FadeOutAudio(nuc, 10f));
-
             }
         }
-
-
     }
+
     void ReadyQ3()
     {
         readyQ3 = true;
+    }
+
+    // 화면 색상 변경 코루틴
+    IEnumerator ChangeColorOverTime(Color targetColor, float duration)
+    {
+        float t = 0;
+        Color initialColor = colorAdjustments.colorFilter.value;
+        while (t < duration)
+        {
+            colorAdjustments.colorFilter.value = Color.Lerp(initialColor, targetColor, t / duration);
+            t += Time.deltaTime;
+            yield return null;
+        }
+        colorAdjustments.colorFilter.value = targetColor;
+    }
+
+    // 화면 깜빡임 효과 코루틴
+    IEnumerator BlinkColor(Color targetColor, Color originalColor, float duration)
+    {
+        while (true)
+        {
+            yield return StartCoroutine(ChangeColorOverTime(targetColor, duration));
+            yield return StartCoroutine(ChangeColorOverTime(originalColor, duration));
+        }
     }
 
     // 오디오 페이드인
@@ -294,11 +320,9 @@ public class CanvasOnOff4 : MonoBehaviour
 
     void FadeOut()
     {
-        if(fadeOut == true)
+        if (fadeOut == true)
         {
             screenFade.FadeOut();
         }
-        
     }
-
 }
