@@ -595,6 +595,7 @@ MonoBehaviour:
   toggle: {fileID: 14343225}
   targetObject: {fileID: 1683794943}
   targetObject2: {fileID: 914224524}
+  audioSource: {fileID: 0}
 --- !u!65 &14343224
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -920,6 +921,7 @@ MonoBehaviour:
   toggle: {fileID: 27988545}
   targetObject: {fileID: 1879045054}
   targetObject2: {fileID: 406088931}
+  audioSource: {fileID: 0}
 --- !u!65 &27988548
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1025,6 +1027,7 @@ MonoBehaviour:
   toggle: {fileID: 14343225}
   targetObject: {fileID: 1683794943}
   targetObject2: {fileID: 914224524}
+  audioSource: {fileID: 0}
 --- !u!222 &30973063
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4940,6 +4943,7 @@ MonoBehaviour:
   toggle: {fileID: 1386950976}
   targetObject: {fileID: 716264312}
   targetObject2: {fileID: 985871773}
+  audioSource: {fileID: 0}
 --- !u!114 &197714069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5941,6 +5945,7 @@ MonoBehaviour:
   toggle: {fileID: 571562657}
   targetObject: {fileID: 722501942}
   targetObject2: {fileID: 1802647700}
+  audioSource: {fileID: 0}
 --- !u!222 &229074653
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8551,6 +8556,7 @@ MonoBehaviour:
   toggle: {fileID: 669650830}
   targetObject: {fileID: 1661295125}
   targetObject2: {fileID: 1529283923}
+  audioSource: {fileID: 0}
 --- !u!114 &316176969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10349,6 +10355,7 @@ MonoBehaviour:
   toggle: {fileID: 381970547}
   targetObject: {fileID: 1366114044}
   targetObject2: {fileID: 1910999339}
+  audioSource: {fileID: 0}
 --- !u!65 &381970550
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12808,6 +12815,7 @@ MonoBehaviour:
   toggle: {fileID: 381970547}
   targetObject: {fileID: 1366114044}
   targetObject2: {fileID: 1910999339}
+  audioSource: {fileID: 0}
 --- !u!114 &502110262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14814,6 +14822,7 @@ MonoBehaviour:
   toggle: {fileID: 571562657}
   targetObject: {fileID: 722501942}
   targetObject2: {fileID: 1802647700}
+  audioSource: {fileID: 0}
 --- !u!65 &571562656
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15676,6 +15685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tts: {fileID: 608682766}
+  correct: {fileID: 0}
 --- !u!1 &610857870 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1547228908702450, guid: aa7ea4a62c25d5d4ca5dc4aa5f2a8a22,
@@ -16807,7 +16817,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _interactor
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 347853290}
     - target: {fileID: 3274909820203450005, guid: f5a378ca73560894e9b56807ffb271a6,
         type: 3}
       propertyPath: m_Name
@@ -17902,7 +17912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a48203bc14da11e459819974534ce564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetUI: {fileID: 65891195}
+  targetToggle: {fileID: 0}
   popupImage: {fileID: 401154382}
   notificationSound: {fileID: 668442030}
   delay: 5
@@ -18497,6 +18507,7 @@ MonoBehaviour:
   toggle: {fileID: 669650830}
   targetObject: {fileID: 1661295125}
   targetObject2: {fileID: 1529283923}
+  audioSource: {fileID: 0}
 --- !u!65 &669650833
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19978,6 +19989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tts: {fileID: 710368557}
+  correct: {fileID: 0}
 --- !u!1 &711033416
 GameObject:
   m_ObjectHideFlags: 0
@@ -20415,6 +20427,7 @@ MonoBehaviour:
   toggle: {fileID: 723654433}
   targetObject: {fileID: 228107480}
   targetObject2: {fileID: 1141152703}
+  audioSource: {fileID: 0}
 --- !u!65 &723654432
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22993,6 +23006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tts: {fileID: 805067076}
+  correct: {fileID: 0}
 --- !u!1 &809358193
 GameObject:
   m_ObjectHideFlags: 0
@@ -28192,6 +28206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tts: {fileID: 1056911793}
+  correct: {fileID: 0}
 --- !u!82 &1056911793
 AudioSource:
   m_ObjectHideFlags: 0
@@ -29241,7 +29256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a56054f6e3838f4e85dce4e71979800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactor: {fileID: 0}
+  _interactor: {fileID: 347853290}
   _property: 36
 --- !u!114 &1102680057
 MonoBehaviour:
@@ -33150,6 +33165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tts: {fileID: 1251434844}
+  correct: {fileID: 0}
 --- !u!114 &1258842095 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8930155292704308951, guid: 4c0ee7a14e52ba544b89c2f777670cca,
@@ -35056,6 +35072,7 @@ MonoBehaviour:
   toggle: {fileID: 1777553450}
   targetObject: {fileID: 218065003}
   targetObject2: {fileID: 495814498}
+  audioSource: {fileID: 0}
 --- !u!114 &1305083982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37328,6 +37345,7 @@ MonoBehaviour:
   toggle: {fileID: 1386950976}
   targetObject: {fileID: 716264312}
   targetObject2: {fileID: 985871773}
+  audioSource: {fileID: 0}
 --- !u!65 &1386950979
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40642,6 +40660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tts: {fileID: 1537674582}
+  correct: {fileID: 0}
 --- !u!1 &1543995293
 GameObject:
   m_ObjectHideFlags: 0
@@ -44457,7 +44476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a56054f6e3838f4e85dce4e71979800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactor: {fileID: 0}
+  _interactor: {fileID: 347853290}
   _property: 36
 --- !u!114 &1654002653
 MonoBehaviour:
@@ -45963,7 +45982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a56054f6e3838f4e85dce4e71979800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactor: {fileID: 0}
+  _interactor: {fileID: 347853290}
   _property: 36
 --- !u!114 &1701357174
 MonoBehaviour:
@@ -46019,6 +46038,7 @@ Transform:
   m_Children:
   - {fileID: 4497659504923617680}
   - {fileID: 1675518761}
+  - {fileID: 1793580230}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1704373830
@@ -49102,6 +49122,7 @@ MonoBehaviour:
   toggle: {fileID: 1777553450}
   targetObject: {fileID: 218065003}
   targetObject2: {fileID: 495814498}
+  audioSource: {fileID: 0}
 --- !u!65 &1777553453
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49366,7 +49387,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1701357176}
     m_Modifications:
     - target: {fileID: 4310633382414872381, guid: 9baa41f8ccc4f8242bf1066ef7543fe4,
         type: 3}
@@ -49436,7 +49457,7 @@ PrefabInstance:
     - target: {fileID: 4310633382414872381, guid: 9baa41f8ccc4f8242bf1066ef7543fe4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.081
+      value: 0.010000229
       objectReference: {fileID: 0}
     - target: {fileID: 4310633382414872381, guid: 9baa41f8ccc4f8242bf1066ef7543fe4,
         type: 3}
@@ -49461,12 +49482,12 @@ PrefabInstance:
     - target: {fileID: 4310633382414872381, guid: 9baa41f8ccc4f8242bf1066ef7543fe4,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -8.69
+      value: -0.04099846
       objectReference: {fileID: 0}
     - target: {fileID: 4310633382414872381, guid: 9baa41f8ccc4f8242bf1066ef7543fe4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.596
+      value: 0.13699996
       objectReference: {fileID: 0}
     - target: {fileID: 4310633382414872381, guid: 9baa41f8ccc4f8242bf1066ef7543fe4,
         type: 3}
@@ -49544,6 +49565,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9baa41f8ccc4f8242bf1066ef7543fe4, type: 3}
+--- !u!224 &1793580230 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4310633382414872381, guid: 9baa41f8ccc4f8242bf1066ef7543fe4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1793580229}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1794236376
 GameObject:
   m_ObjectHideFlags: 0
@@ -49957,7 +49984,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _interactor
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 347853290}
     - target: {fileID: 7422258329424729543, guid: c992378e39bc57b4082cf1027b0b8100,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -51483,7 +51510,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _interactor
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 347853290}
     - target: {fileID: 3274909820203450005, guid: f5a378ca73560894e9b56807ffb271a6,
         type: 3}
       propertyPath: m_Name
@@ -53201,6 +53228,7 @@ MonoBehaviour:
   toggle: {fileID: 27988545}
   targetObject: {fileID: 1879045054}
   targetObject2: {fileID: 406088931}
+  audioSource: {fileID: 0}
 --- !u!114 &1923776085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57785,7 +57813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a56054f6e3838f4e85dce4e71979800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactor: {fileID: 0}
+  _interactor: {fileID: 347853290}
   _property: 36
 --- !u!114 &2100762217
 MonoBehaviour:
@@ -59162,7 +59190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a56054f6e3838f4e85dce4e71979800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactor: {fileID: 0}
+  _interactor: {fileID: 347853290}
   _property: 36
 --- !u!114 &2129032095
 MonoBehaviour:
@@ -60628,7 +60656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a56054f6e3838f4e85dce4e71979800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactor: {fileID: 0}
+  _interactor: {fileID: 347853290}
   _property: 36
 --- !u!114 &8831188228293191244
 MonoBehaviour:
@@ -60803,7 +60831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a56054f6e3838f4e85dce4e71979800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactor: {fileID: 0}
+  _interactor: {fileID: 347853290}
   _property: 36
 --- !u!114 &8934268390780873140
 MonoBehaviour:
@@ -60937,7 +60965,6 @@ SceneRoots:
   - {fileID: 1568165848}
   - {fileID: 1798623634}
   - {fileID: 1701357176}
-  - {fileID: 1793580229}
   - {fileID: 1102680050}
   - {fileID: 2100762210}
   - {fileID: 1654002646}
