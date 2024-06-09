@@ -130,8 +130,8 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\SimpleCapsuleWithStickMovement.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\CowController.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabLogger.cs" />
-    <Compile Include="Assets\ActiveOutline.cs" />
     <Compile Include="Assets\01.Script\OVRInputManager.cs" />
+    <Compile Include="Assets\ActiveOutline.cs" />
     <Compile Include="Assets\01.Script\Pointer.cs" />
     <Compile Include="Assets\01.Script\OVRInputController2.cs" />
     <Compile Include="Assets\01.Script\CameraMove.cs" />
