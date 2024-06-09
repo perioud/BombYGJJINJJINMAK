@@ -9,6 +9,13 @@ TagManager:
   - SamplesInfoPanel
   - Item
   - Floor
+  - Inventory
+  - OBJUmbrella
+  - OBJMask
+  - OBJClothes
+  - OBJHat
+  - End
+  - SeeTarget
   layers:
   - Default
   - TransparentFX
@@ -20,7 +27,7 @@ TagManager:
   - Player
   - Grabbables
   - TeleportLayer
-  - 
+  - wallLayer
   - 
   - 
   - 
