@@ -1,34 +1,26 @@
-using Oculus.Interaction;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class CanvasOnOff0 : MonoBehaviour
 {
     public GameObject canvasToDisable;
     public GameObject nextCanvasToShow;
-
+    public Outline outlineToCheck;
     public float delayTime = 2.0f;
+    public AudioSource cur;
 
     private bool actionPerformed = false;
 
-
     void Update()
     {
-        if (OVRInput.GetDown(OVRInput.Button.Two))
+        // 아웃라인이 활성화되었는지 체크합니다.
+        if (outlineToCheck != null && outlineToCheck.enabled && !actionPerformed)
         {
             PerformAction();
             actionPerformed = true;
             Invoke("DisableCanvas", delayTime);
-            Invoke("PlayAudio", (delayTime - 1.0f)); // 1초 뒤에 오디오 재생
-        }
-        if (OVRInput.GetDown(OVRInput.Button.Four))
-        {
-            PerformAction();
-            actionPerformed = true;
-            Invoke("DisableCanvas", delayTime);
-            Invoke("PlayAudio", (delayTime - 1.0f)); // 1초 뒤에 오디오 재생
+            Invoke("PlayAudio", (delayTime - 1.9f)); // 1초 뒤에 오디오 재생
         }
     }
 
@@ -39,7 +31,7 @@ public class CanvasOnOff0 : MonoBehaviour
 
     void DisableCanvas()
     {
-        if (actionPerformed && canvasToDisable != null)
+        if (canvasToDisable != null)
         {
             canvasToDisable.SetActive(false);
 
@@ -54,5 +46,11 @@ public class CanvasOnOff0 : MonoBehaviour
         {
             nextCanvasToShow.SetActive(true);
         }
+    }
+
+    void PlayAudio()
+    {
+        cur.Play();
+        // 오디오 재생 로직을 여기에 추가하십시오.
     }
 }

@@ -40,14 +40,16 @@ public class CanvasOnOff4 : MonoBehaviour
     public float actionTimeLimit = 60f; // 퀘스트 제한 시간 설정
     public float collisionTimeLimit = 30f; // 실명 제한 시간 설정
     public TMP_Text actionTimerText;
-    public TMP_Text collisionTimerText;
-    public GameObject collisionTimer;
+    //public TMP_Text collisionTimerText;
+    //public GameObject collisionTimer;
     private bool q3Active = false;
     private bool readyQ3 = false;
     public GameObject UICam;
     private bool fadeOut;
     public Volume volume; 
-    private ColorAdjustments colorAdjustments; 
+    private ColorAdjustments colorAdjustments;
+    //public GameObject blineUi;
+   // public GameObject actionTimer;
 
     private Coroutine colorChangeCoroutine;
     #endregion
@@ -82,7 +84,7 @@ public class CanvasOnOff4 : MonoBehaviour
         float remainingActionTime = actionTimeLimit - elapsedTime;
 
         // 1분 제한 시간 표시
-        actionTimerText.text = "GameOver: " + remainingActionTime.ToString("F1") + "s";
+        actionTimerText.text = remainingActionTime.ToString("F1") + "s";
 
         // 충돌 시간
         if (collided)
@@ -91,7 +93,8 @@ public class CanvasOnOff4 : MonoBehaviour
             float remainingCollisionTime = collisionTimeLimit - collisionElapsedTime;
 
             // 실명 제한 시간 표시
-            collisionTimerText.text = "blind: " + remainingCollisionTime.ToString("F1") + "s";
+            //collisionTimerText.text = remainingCollisionTime.ToString("F1") + "s";
+            
 
             // 실명 게임오버
             if (collisionElapsedTime >= collisionTimeLimit && !fadeOut)
@@ -164,11 +167,13 @@ public class CanvasOnOff4 : MonoBehaviour
             Debug.Log("Activating canvas and deactivating canvas2.");
             canvas.SetActive(true);
             q3Active = false;
+            //blineUi.SetActive(true);
+            //actionTimer.SetActive(true);
             canvas3.SetActive(false);
             canvas2.SetActive(false);
             button1.SetActive(false);
             button2.SetActive(false);
-            collisionTimer.SetActive(true);
+            //collisionTimer.SetActive(true);
 
         }
         else
@@ -178,12 +183,14 @@ public class CanvasOnOff4 : MonoBehaviour
             canvas.SetActive(false);
             if (q3Active == false)
             {
+                //actionTimer.SetActive(false);
+                //blineUi.SetActive(false);
                 canvas2.SetActive(true);
                 button1.SetActive(true);
                 button2.SetActive(true);
             }
 
-            collisionTimer.SetActive(false);
+            //collisionTimer.SetActive(false);
 
             bool isBothHandsActive = leftInteractorState.Active && rightInteractorState.Active;
 

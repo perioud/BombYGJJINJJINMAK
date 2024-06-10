@@ -16,6 +16,7 @@ TagManager:
   - OBJHat
   - End
   - SeeTarget
+  - Fresh
   layers:
   - Default
   - TransparentFX

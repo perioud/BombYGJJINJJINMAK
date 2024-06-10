@@ -183,6 +183,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\Utils\Pose.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Scripts\MoviePlayerSample.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\PanelHMDFollower.cs" />
+    <Compile Include="Assets\KawaseBlur\KawaseBlur.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\Resizer.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\AnchorSpawner.cs" />
     <Compile Include="Assets\StartScene.cs" />
@@ -285,6 +286,7 @@
     <Compile Include="Assets\01.Script\Leesoo\Ui\CanvasOnOff.cs" />
     <Compile Include="Assets\01.Script\Leesoo\Items\Slot.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainLocomotive.cs" />
+    <Compile Include="Assets\01.Script\Leesoo\Ui\CanvasOnOff5.cs" />
     <Compile Include="Assets\01.Script\Leesoo\Items\Bag.cs" />
     <Compile Include="Assets\01.Script\TextController.cs" />
     <Compile Include="Assets\01.Script\MQ1.cs" />
@@ -303,12 +305,14 @@
     <None Include="Assets\Other\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\ButtonGlow.shader" />
     <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFFlipTexture.shader" />
+    <None Include="Assets\04. Textures\blur\BlurShader.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials\SelectivePassthrough.shader" />
     <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFColorSpace.cginc" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials\SelectivePassthroughSoft.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Shaders\OverwriteAlpha.shader" />
     <None Include="Assets\Other\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\CrosshairZCheat.shader" />
+    <None Include="Assets\KawaseBlur\KawaseBlur.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\GradientSkybox.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials\PassthroughLine.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials\BackgroundColor.shader" />

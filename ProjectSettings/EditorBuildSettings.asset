@@ -15,17 +15,17 @@ EditorBuildSettings:
     path: Assets/00.Scene/GameOver.unity
     guid: 370df4408c3b08347a64c9e78c7a0594
   - enabled: 1
-    path: Assets/00.Scene/MainQuest.unity
-    guid: 2be2c35bf93ebb94b9eb443c0e8b7416
-  - enabled: 1
     path: Assets/00.Scene/Chapter2.unity
-    guid: c19438f7d5ab3a34887242cdb764a4b0
+    guid: 7d114f3dc53f8084aba53aaa9c300b69
   - enabled: 1
     path: Assets/00.Scene/Main 1.unity
     guid: 126f215fb50f94a4f9c21cfb4e8a7efd
   - enabled: 1
     path: Assets/00.Scene/blind.unity
     guid: b7365f79e093e714da38202b70edb01e
+  - enabled: 1
+    path: Assets/00.Scene/MainQuest.unity
+    guid: 14ea52cac4a881843bea6b4f2de963a1
   - enabled: 1
     path: Assets/00.Scene/Ending Scene.unity
     guid: fc47ff84848b2b04ca0cf96a53caa0bb
