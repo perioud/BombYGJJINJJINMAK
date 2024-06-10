@@ -119,6 +119,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportOrientationHandler360.cs" />
     <Compile Include="Assets\01.Script\Leesoo\Ui\CanvasOnOff3.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\TouchPro\Scripts\SceneSettings.cs" />
+    <Compile Include="Assets\01.Script\Leesoo\Indicator\GrabArrow.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\DistanceGrabber.cs" />
     <Compile Include="Assets\NotificationSystem.cs" />
     <Compile Include="Assets\Custom Assets\Animated racing arrows\Animationtexture.cs" />
@@ -263,6 +264,7 @@
     <Compile Include="Assets\Other\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\01.Script\Leesoo\Camera_\CameraArrowFollow.cs" />
     <Compile Include="Assets\ActiveStateHovering.cs" />
+    <Compile Include="Assets\01.Script\Leesoo\Indicator\GrabDestroy.cs" />
     <Compile Include="Assets\01.Script\SeeNuc.cs" />
     <Compile Include="Assets\01.Script\Leesoo\Indicator\Arrow2.cs" />
     <Compile Include="Assets\ObjectFallForward.cs" />
