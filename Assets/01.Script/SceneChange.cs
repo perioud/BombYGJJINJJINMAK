@@ -14,6 +14,6 @@ public class SceneChange : MonoBehaviour
     private void LoadSceneDelayed()
     {
         // SceneManager를 사용하여 scene을 로드
-        SceneManager.LoadScene(0); // 로드할 scene의 빌드 인덱스를 지정 (0은 첫 번째 scene)
+        SceneManager.LoadScene(10); // 로드할 scene의 빌드 인덱스를 지정 (0은 첫 번째 scene)
     }
 }

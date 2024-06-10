@@ -35,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/00.Scene/SubWay.unity
     guid: e245e41bde5cb7441b3b18c361c15b6c
+  - enabled: 1
+    path: Assets/00.Scene/MainLast.unity
+    guid: 12d8d971601d0bf4ea007da030a3a756
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5a647b5c624184d4fbe78a30e2dd81e5,
       type: 2}
