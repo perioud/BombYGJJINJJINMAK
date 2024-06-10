@@ -99,6 +99,7 @@ using System.Collections;
 
 public class EndingScene : MonoBehaviour
 {
+    public AudioSource SE;
     public OVRInput.Controller controller;
     public float fadeDuration = 4.0f; // 페이드 아웃 지속 시간
 
@@ -111,6 +112,7 @@ public class EndingScene : MonoBehaviour
         {
             if (OVRScreenFade.instance != null)
             {
+                SE.Play();
                 OVRScreenFade.instance.FadeOut();
                 StartCoroutine(WaitAndLoadScene(8, fadeDuration));
             }

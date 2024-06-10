@@ -130,6 +130,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\SimpleCapsuleWithStickMovement.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\CowController.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabLogger.cs" />
+    <Compile Include="Assets\ActiveOutline.cs" />
     <Compile Include="Assets\01.Script\OVRInputManager.cs" />
     <Compile Include="Assets\01.Script\Pointer.cs" />
     <Compile Include="Assets\01.Script\OVRInputController2.cs" />
@@ -150,6 +151,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\TouchPro\Scripts\StylusTip\StylusTip.cs" />
     <Compile Include="Assets\01.Script\UIS\CheckNextUi.cs" />
     <Compile Include="Assets\01.Script\Leesoo\Ui\CanvasOnOff4.cs" />
+    <Compile Include="Assets\UIAutoDestroy.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DebugUI\Scripts\DebugUIBuilder.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\TouchPro\Scripts\Ui\UiBoolInspector.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\BouncingBallMgr.cs" />
@@ -182,6 +184,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\Utils\Pose.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Scripts\MoviePlayerSample.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\PanelHMDFollower.cs" />
+    <Compile Include="Assets\KawaseBlur\KawaseBlur.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\Resizer.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\AnchorSpawner.cs" />
     <Compile Include="Assets\StartScene.cs" />
@@ -259,6 +262,7 @@
     <Compile Include="Assets\01.Script\PlayTV.cs" />
     <Compile Include="Assets\Other\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\01.Script\Leesoo\Camera_\CameraArrowFollow.cs" />
+    <Compile Include="Assets\ActiveStateHovering.cs" />
     <Compile Include="Assets\01.Script\SeeNuc.cs" />
     <Compile Include="Assets\01.Script\Leesoo\Indicator\Arrow2.cs" />
     <Compile Include="Assets\ObjectFallForward.cs" />
@@ -274,6 +278,7 @@
     <Compile Include="Assets\01.Script\QuestButton.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\OVROverlay\Scripts\OVROverlaySample.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\InteractableRegistry.cs" />
+    <Compile Include="Assets\UITriggerInOut.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\ColliderZone.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransitionWarp.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\WindmillController.cs" />
@@ -283,6 +288,7 @@
     <Compile Include="Assets\01.Script\Leesoo\Ui\CanvasOnOff.cs" />
     <Compile Include="Assets\01.Script\Leesoo\Items\Slot.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainLocomotive.cs" />
+    <Compile Include="Assets\01.Script\Leesoo\Ui\CanvasOnOff5.cs" />
     <Compile Include="Assets\01.Script\Leesoo\Items\Bag.cs" />
     <Compile Include="Assets\01.Script\TextController.cs" />
     <Compile Include="Assets\01.Script\MQ1.cs" />
@@ -301,12 +307,14 @@
     <None Include="Assets\Other\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\ButtonGlow.shader" />
     <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFFlipTexture.shader" />
+    <None Include="Assets\04. Textures\blur\BlurShader.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials\SelectivePassthrough.shader" />
     <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFColorSpace.cginc" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials\SelectivePassthroughSoft.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Shaders\OverwriteAlpha.shader" />
     <None Include="Assets\Other\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\CrosshairZCheat.shader" />
+    <None Include="Assets\KawaseBlur\KawaseBlur.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\GradientSkybox.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials\PassthroughLine.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials\BackgroundColor.shader" />
