@@ -22,7 +22,11 @@ public class Pointer : MonoBehaviour
     {
         lineRenderer.startColor = noHitColor;
         lineRenderer.endColor = noHitColor;
+        lineRenderer.positionCount = 2;
+        lineRenderer.startWidth = 0.01f;
+        lineRenderer.endWidth = 0.01f;
         lineRenderer.enabled = false; // 처음에는 LineRenderer를 비활성화
+                                     
     }
 
     void Update()
