@@ -20,7 +20,8 @@ public class PlayTV : MonoBehaviour
 
     void Start()
     {
-        
+
+        newsPlayer.SetActive(false);
         ActiveState = FindObjectOfType<InteractorActiveState>();
 
         videoPlayer = GetComponent<VideoPlayer>();
