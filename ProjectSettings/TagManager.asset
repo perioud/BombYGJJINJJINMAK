@@ -17,6 +17,7 @@ TagManager:
   - End
   - SeeTarget
   - Fresh
+  - Pointer
   layers:
   - Default
   - TransparentFX
@@ -29,7 +30,7 @@ TagManager:
   - Grabbables
   - TeleportLayer
   - wallLayer
-  - 
+  - Pointer
   - 
   - 
   - 
