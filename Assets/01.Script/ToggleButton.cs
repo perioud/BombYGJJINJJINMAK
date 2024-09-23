@@ -8,22 +8,24 @@ public class ToggleButton : MonoBehaviour
     public Toggle toggle;
     public GameObject targetObject;
     public GameObject targetObject2;
-    public AudioSource audioSource;
+    private AudioSource audioSource;
+    public AudioClip soundClip; // 재생할 사운드 클립
 
     private void Start()
     {
         toggle.onValueChanged.AddListener(OnToggleChanged);
-        audioSource = GetComponent<AudioSource>();
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     public void OnToggleChanged(bool isOn)
     {
         if (isOn)
         {
+            audioSource.clip = soundClip;
+            audioSource.Play();
             Debug.Log("ON");
             targetObject.SetActive(true);
             targetObject2.SetActive(true);
-            audioSource.Play();
         }
         else
         {
