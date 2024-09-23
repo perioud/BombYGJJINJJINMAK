@@ -18986,7 +18986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a56054f6e3838f4e85dce4e71979800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactor: {fileID: 0}
+  _interactor: {fileID: 347853290}
   _property: 36
 --- !u!114 &565359715
 MonoBehaviour:
@@ -34322,7 +34322,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _interactor
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 347853290}
     - target: {fileID: 7688167241150892798, guid: 00df0fdc70bc8e54e8b6a45101520cb8,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -56710,7 +56710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a56054f6e3838f4e85dce4e71979800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactor: {fileID: 0}
+  _interactor: {fileID: 347853290}
   _property: 36
 --- !u!114 &1698754756
 MonoBehaviour:
