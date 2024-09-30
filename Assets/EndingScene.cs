@@ -150,7 +150,7 @@ public class EndingScene : MonoBehaviour
 
         if (sceneIndex >= 0 && sceneIndex < SceneManager.sceneCountInBuildSettings)
         {
-            SceneManager.LoadScene(sceneIndex);
+            SceneManager.LoadScene("Ending");
         }
         else
         {
