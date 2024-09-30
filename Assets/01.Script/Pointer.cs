@@ -70,20 +70,20 @@ public class Pointer : MonoBehaviour
                 currentSlider = slider; // 현재 충돌한 슬라이더 업데이트
             }
 
-            // "Item" 태그를 가진 오브젝트 감지 // UI on/off
-            if (hit.collider.CompareTag("Item") || (hit.collider.CompareTag("Fresh")))
-            {
-                GameObject itemObject = hit.collider.gameObject;
-                if (ItemUi != itemObject)
-                {
-                    if (ItemUi != null)
-                    {
-                        ItemUi.transform.GetChild(0).gameObject.SetActive(false);
-                    }
-                    ItemUi = itemObject;
-                    ItemUi.transform.GetChild(0).gameObject.SetActive(true);
-                }
-            }
+            //// "Item" 태그를 가진 오브젝트 감지 // UI on/off
+            //if (hit.collider.CompareTag("Item") || (hit.collider.CompareTag("Fresh")))
+            //{
+            //    GameObject itemObject = hit.collider.gameObject;
+            //    if (ItemUi != itemObject)
+            //    {
+            //        if (ItemUi != null)
+            //        {
+            //            ItemUi.transform.GetChild(0).gameObject.SetActive(false);
+            //        }
+            //        ItemUi = itemObject;
+            //        ItemUi.transform.GetChild(0).gameObject.SetActive(true);
+            //    }
+            //}
             else
             {
                 if (ItemUi != null)

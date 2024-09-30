@@ -147,14 +147,6 @@ public class EndingScene : MonoBehaviour
         Debug.Log("트리거가 눌렸습니다, 페이드 아웃 시작...");
         yield return new WaitForSeconds(waitTime);
         Debug.Log("씬 로딩...");
-
-        if (sceneIndex >= 0 && sceneIndex < SceneManager.sceneCountInBuildSettings)
-        {
-            SceneManager.LoadScene("Ending");
-        }
-        else
-        {
-            Debug.LogError("잘못된 씬 인덱스입니다.");
-        }
+        SceneManager.LoadScene("Ending");
     }
 }
