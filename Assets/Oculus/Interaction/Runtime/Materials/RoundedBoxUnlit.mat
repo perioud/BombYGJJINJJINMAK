@@ -28,7 +28,7 @@ Material:
     - _ZTest: 4
     m_Colors:
     - _BorderColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 0.60784316}
+    - _Color: {r: 0.26415092, g: 0.080989674, b: 0.080989674, a: 0.60784316}
     - _Dimensions: {r: 0.01, g: 0.04, b: 0.002, a: 0}
     - _ProximityColor: {r: 0, g: 0, b: 0, a: 1}
     - _ProximityStrength: {r: 0, g: 0, b: 0, a: 0}
