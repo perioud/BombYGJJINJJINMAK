@@ -56,6 +56,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\KimJaeHo\BombYGJJINJJINMAK\Assets\RayFire\Plugins\Windows\x86_x64\RFLib_DotNet_2018.dll" />
+    <Analyzer Include="C:\Users\KimJaeHo\BombYGJJINJJINMAK\Assets\RayFire\Plugins\Windows\x86\RFLib_DotNet_2018_x86.dll" />
+    <Analyzer Include="C:\Users\KimJaeHo\BombYGJJINJJINMAK\Assets\RayFire\Plugins\Linux\RFLib_DotNet_2018_lin.dll" />
+    <Analyzer Include="C:\Users\KimJaeHo\BombYGJJINJJINMAK\Assets\RayFire\Plugins\Ios\RFLib_DotNet_2018_ios.dll" />
+    <Analyzer Include="C:\Users\KimJaeHo\BombYGJJINJJINMAK\Assets\RayFire\Plugins\Mac\RFLib_DotNet_2018_osx.dll" />
+    <Analyzer Include="C:\Users\KimJaeHo\BombYGJJINJJINMAK\Assets\RayFire\Plugins\Android\RFLib_DotNet_2018_andr.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.14f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.14f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
@@ -109,6 +115,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\RayToolView.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\BoneCapsuleTriggerLogic.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Interactable.cs" />
+    <Compile Include="Assets\Custom Assets\RayFire\Tutorial\Scripts\ConnectivityEventScript.cs" />
     <Compile Include="Assets\01.Script\UIS\CheckmarkButton.cs" />
     <Compile Include="Assets\CanvasStateController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\OverlayPassthrough.cs" />
@@ -236,6 +243,7 @@
     <Compile Include="Assets\01.Script\Leesoo\Camera_\ExampleClass.cs" />
     <Compile Include="Assets\01.Script\ToggleButton.cs" />
     <Compile Include="Assets\01.Script\Leesoo\Camera_\CameraTracking.cs" />
+    <Compile Include="Assets\Custom Assets\RayFire\Tutorial\Scripts\ApplyDamageScript.cs" />
     <Compile Include="Assets\PickupSound.cs" />
     <Compile Include="Assets\01.Script\HandMaterial.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportOrientationHandlerHMD.cs" />
@@ -251,6 +259,7 @@
     <Compile Include="Assets\01.Script\Leesoo\Items\RayTest.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\HandsManager.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransitionInstant.cs" />
+    <Compile Include="Assets\Custom Assets\RayFire\Tutorial\Scripts\TranslateScript.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\CustomSceneManager\BasicSceneManager.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\CustomSceneManager\DynamicSceneManager.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainCarBase.cs" />
@@ -272,6 +281,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\CharacterCameraConstraint.cs" />
     <Compile Include="Assets\01.Script\Leesoo\Wall\TransparentWall.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\SpatialAnchorLoader.cs" />
+    <Compile Include="Assets\Custom Assets\RayFire\Tutorial\Scripts\DemolitionEventScript.cs" />
     <Compile Include="Assets\Bitgem\StylisedWater\URP\Scripts\Bitgem\VFX\StylisedWater\WaterVolumeHelper.cs" />
     <Compile Include="Assets\Bitgem\StylisedWater\URP\Scripts\Bitgem\VFX\StylisedWater\WateverVolumeFloater.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SelectivePassthroughExperience.cs" />
@@ -287,6 +297,7 @@
     <Compile Include="Assets\01.Script\Leesoo\Ui\TextProperty.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\ButtonController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTargetHandlerNavMesh.cs" />
+    <Compile Include="Assets\Custom Assets\RayFire\Tutorial\Scripts\FadingEventScript.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Locomotion\Scripts\LocomotionSampleSupport.cs" />
     <Compile Include="Assets\Tuna.cs" />
     <Compile Include="Assets\01.Script\UIS\CheckmarkManager.cs" />
@@ -297,12 +308,15 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\OVROverlay\Scripts\OVROverlaySample.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\InteractableRegistry.cs" />
     <Compile Include="Assets\UITriggerInOut.cs" />
+    <Compile Include="Assets\Custom Assets\RayFire\Tutorial\Scripts\AddRigidComponent.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\ColliderZone.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransitionWarp.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\WindmillController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Firebase\AnalyticsUI.cs" />
+    <Compile Include="Assets\Custom Assets\DeepVoice\Demo\Resources\CanvasController.cs" />
     <Compile Include="Assets\01.Script\KW\GrabRingGauge.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainTrack.cs" />
+    <Compile Include="Assets\Custom Assets\RayFire\Tutorial\Scripts\ActivationEventScript.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\LocomotionController.cs" />
     <Compile Include="Assets\01.Script\Leesoo\Ui\CanvasOnOff.cs" />
     <Compile Include="Assets\01.Script\Leesoo\Items\Slot.cs" />
@@ -318,6 +332,7 @@
     <Compile Include="Assets\uiOnOff.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Custom Assets\RayFire\Plugins\Windows\x86_x64\RFLib_DotNet_2018.dll" />
     <None Include="Assets\Import\Face_mask\license.txt" />
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\XingLightShader.shader" />
     <None Include="Assets\Other\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -336,12 +351,16 @@
     <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\CrosshairZCheat.shader" />
     <None Include="Assets\KawaseBlur\KawaseBlur.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\GradientSkybox.shader" />
+    <None Include="Assets\Custom Assets\RayFire\Plugins\Android\RFLib_DotNet_2018_andr.dll" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials\PassthroughLine.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials\BackgroundColor.shader" />
+    <None Include="Assets\Custom Assets\RayFire\Plugins\Windows\x86_x64\RFLib_CNative_2018.dll" />
     <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFPackOccMetalRough.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials\FatFingers.shader" />
     <None Include="Assets\Custom Assets\URP PostProcessing Profiles\ReadmeFIRST!.txt" />
     <None Include="Assets\Other\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\Custom Assets\RayFire\Plugins\Linux\RFLib_DotNet_2018_lin.dll" />
+    <None Include="Assets\Custom Assets\DeepVoice\DeepVoice FAQs.txt" />
     <None Include="Assets\Other\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\Custom Assets\QuickOutline\Resources\Shaders\OutlineMask.shader" />
     <None Include="Assets\Custom Assets\Scandinavian Interior Archviz\Shaders\DoubleSided Alpha Cutout (Specular).shader" />
@@ -354,6 +373,7 @@
     <None Include="Assets\Custom Assets\Hovl Studio\Nuclear explosion\Shaders\Blend_CenterGlow.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\Video\Shaders\Multiview Stereo.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\DebugUI\Fonts\Montserrat\OFL.txt" />
+    <None Include="Assets\Custom Assets\RayFire\Plugins\Windows\x86\RFLib_CNative_2018_x86.dll" />
     <None Include="Assets\Custom Assets\Scandinavian Interior Archviz\Shaders\Fabric_Carpet.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Shaders\UI Default Correct.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Shaders\Hands_01.shader" />
@@ -367,21 +387,28 @@
     <None Include="Assets\Other\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Custom Assets\QuickOutline\Readme.txt" />
     <None Include="Assets\Other\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Custom Assets\RayFire\Info\FAQ.txt" />
     <None Include="Assets\Sketchfab For Unity\Dependencies\Libraries\SketchfabPlugin.dll" />
     <None Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Shaders\OculusSampleAlphaHandOutline.shader" />
     <None Include="Assets\Other\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Custom Assets\Scandinavian Interior Archviz\Shaders\Env.shader" />
+    <None Include="Assets\Custom Assets\RayFire\Plugins\Windows\x86\RFLib_DotNet_2018_x86.dll" />
     <None Include="Assets\Subway Environment\Assets\shaders\EmissiveShader.shader" />
+    <None Include="Assets\Custom Assets\RayFire\Plugins\Ios\RFLib_DotNet_2018_ios.dll" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials\GlowEffect.shader" />
     <None Include="Assets\Oculus\Voice\Features\Telemetry\Plugins\SDKTelemetry.dll" />
     <None Include="Assets\Other\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\OculusSampleTrainSmokeShader.shader" />
+    <None Include="Assets\Custom Assets\RayFire\Info\CHANGELOG.txt" />
     <None Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Shaders\UI Prerendered Opaque.shader" />
+    <None Include="Assets\Custom Assets\RayFire\Plugins\Mac\RFLib_DotNet_2018_osx.dll" />
     <None Include="Assets\Oculus\SampleFramework\Core\Video\Plugins\Android\Audio360\NOTICE.txt" />
     <None Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Shaders\PassthroughShadow.shader" />
+    <None Include="Assets\Custom Assets\RayFire\Info\README.txt" />
     <None Include="Assets\Custom Assets\Scandinavian Interior Archviz\Shaders\Fabric.shader" />
     <None Include="Assets\Sketchfab For Unity\Dependencies\Libraries\Ionic.Zip.Unity.dll" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Locomotion\Shaders\TriPlanarWorld.shader" />
+    <None Include="Assets\Custom Assets\RayFire\WhereToStart.txt" />
     <None Include="Assets\Custom Assets\Hovl Studio\Nuclear explosion\Shaders\Add_CenterGlow.shader" />
     <None Include="Assets\Other\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Custom Assets\Scandinavian Interior Archviz\Shaders\DoubleSided Alpha Cutout.shader" />
@@ -404,6 +431,7 @@
     <None Include="Assets\Hovl Studio\Magic effects pack\Demo scene\Readme.txt" />
     <None Include="Assets\Custom Assets\Scandinavian Interior Archviz\Shaders\Glass.shader" />
     <None Include="Assets\Custom Assets\Hovl Studio\Nuclear explosion\Shaders\Explosion.shader" />
+    <None Include="Assets\Custom Assets\RayFire\Info\License.txt" />
     <None Include="Assets\Other\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\Sketchfab For Unity\Dependencies\Libraries\GLTFSerialization.dll" />
     <None Include="Assets\Oculus\SampleFramework\license.txt" />
@@ -749,16 +777,8 @@
       <HintPath>Assets\Sketchfab For Unity\Dependencies\Libraries\GLTFSerialization.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.14f1\Editor\Data\PlaybackEngines\AppleTVSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.14f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.14f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    <Reference Include="RFLib_DotNet_2018">
+      <HintPath>Assets\Custom Assets\RayFire\Plugins\Windows\x86_x64\RFLib_DotNet_2018.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Android.Types">
@@ -1579,6 +1599,10 @@
       <Project>{90E5C627-5960-7990-A77C-9EA54AB5BCD2}</Project>
       <Name>OccaSoftware.SuperSimpleSkybox.Runtime</Name>
     </ProjectReference>
+    <ProjectReference Include="RayFireEditorAssembly.csproj">
+      <Project>{8C1F36D6-7C92-DDBF-3CD5-C433995A39F4}</Project>
+      <Name>RayFireEditorAssembly</Name>
+    </ProjectReference>
     <ProjectReference Include="VoiceSDK.Telemetry.csproj">
       <Project>{85F4FA21-FDBF-DC99-5364-4DBC32B75FDE}</Project>
       <Name>VoiceSDK.Telemetry</Name>
@@ -1718,6 +1742,10 @@
     <ProjectReference Include="VoiceSDK.Dictation.Editor.csproj">
       <Project>{9E3EF6E6-1536-BA8A-4082-3AEFDCFDD62A}</Project>
       <Name>VoiceSDK.Dictation.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="RayFireAssembly.csproj">
+      <Project>{671F4B8D-11AD-7A75-4240-B8A501B0962B}</Project>
+      <Name>RayFireAssembly</Name>
     </ProjectReference>
     <ProjectReference Include="AssistantCoreSDKRuntime.csproj">
       <Project>{0A7D2612-1EE5-8D9B-9675-3309F29D194C}</Project>
