@@ -28,6 +28,10 @@ public class TeleportAimVisualLaser : TeleportSupport
     private LineRenderer _lineRenderer;
     private Vector3[] _linePoints;
 
+    public Color validColor = Color.green;  // 유효할 때의 색상
+    public Color invalidColor = Color.red;  // 유효하지 않을 때의 색상
+
+
     public TeleportAimVisualLaser()
     {
         _enterAimStateAction = EnterAimState;
@@ -70,10 +74,11 @@ public class TeleportAimVisualLaser : TeleportSupport
         LocomotionTeleport.UpdateAimData -= _updateAimDataAction;
         base.RemoveEventHandlers();
     }
-
+    
     private void UpdateAimData(LocomotionTeleport.AimData obj)
     {
-        _lineRenderer.sharedMaterial.color = obj.TargetValid ? Color.green : Color.red;
+
+        _lineRenderer.sharedMaterial.color = obj.TargetValid ? validColor : invalidColor;
 
         var points = obj.Points;
         //        Debug.Log("AimVisualLaser: count: " + points.Count);

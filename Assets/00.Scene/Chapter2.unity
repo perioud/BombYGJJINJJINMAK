@@ -36332,7 +36332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactor: {fileID: 347853290}
-  _property: 36
+  _property: 4
 --- !u!114 &1022187147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66905,7 +66905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactor: {fileID: 347853290}
-  _property: 36
+  _property: 4
 --- !u!114 &1795778544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68100,7 +68100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactor: {fileID: 347853290}
-  _property: 36
+  _property: 4
 --- !u!65 &1824837795
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -80957,7 +80957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactor: {fileID: 347853290}
-  _property: 36
+  _property: 4
 --- !u!114 &8934268390780873140
 MonoBehaviour:
   m_ObjectHideFlags: 0

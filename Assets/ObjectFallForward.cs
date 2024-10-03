@@ -30,22 +30,20 @@ public class ObjectFallForward : MonoBehaviour
         Vector3 originalPosition = transform.position;
         float elapsed = 0.0f;
 
+        // 흔들림 동안 오브젝트가 움직이도록 함
         while (elapsed < shakeDuration)
         {
-            float x = Random.Range(-0.5f, 1f) * shakeMagnitude;
-            float y = Random.Range(-0.5f, 1f) * shakeMagnitude;
-            float z = Random.Range(-0.5f, 1f) * shakeMagnitude;
+            float x = Random.Range(-1f, 1f) * shakeMagnitude;
+            float y = Random.Range(-1f, 1f) * shakeMagnitude;
+            float z = Random.Range(-1f, 1f) * shakeMagnitude;
 
             transform.position = originalPosition + new Vector3(x, y, z);
-
-            // 흔들리는 동안 앞으로 힘을 가하여 넘어지게 함
-            rb.AddForce(transform.forward * (forceAmount * Time.deltaTime), ForceMode.VelocityChange);
 
             elapsed += Time.deltaTime;
             yield return null;
         }
 
-        // 흔들림이 끝난 후 원래 위치로 복귀
-        transform.position = originalPosition;
+        // 흔들림이 끝난 후 힘을 가하여 오브젝트를 넘김
+        rb.AddForce(transform.forward * forceAmount, ForceMode.Impulse);
     }
 }

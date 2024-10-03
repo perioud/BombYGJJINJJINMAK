@@ -55,13 +55,7 @@
     <UnityVersion>2022.3.14f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-    <Analyzer Include="C:\Users\KimJaeHo\BombYGJJINJJINMAK\Assets\RayFire\Plugins\Windows\x86_x64\RFLib_DotNet_2018.dll" />
-    <Analyzer Include="C:\Users\KimJaeHo\BombYGJJINJJINMAK\Assets\RayFire\Plugins\Windows\x86\RFLib_DotNet_2018_x86.dll" />
-    <Analyzer Include="C:\Users\KimJaeHo\BombYGJJINJJINMAK\Assets\RayFire\Plugins\Linux\RFLib_DotNet_2018_lin.dll" />
-    <Analyzer Include="C:\Users\KimJaeHo\BombYGJJINJJINMAK\Assets\RayFire\Plugins\Ios\RFLib_DotNet_2018_ios.dll" />
-    <Analyzer Include="C:\Users\KimJaeHo\BombYGJJINJJINMAK\Assets\RayFire\Plugins\Mac\RFLib_DotNet_2018_osx.dll" />
-    <Analyzer Include="C:\Users\KimJaeHo\BombYGJJINJJINMAK\Assets\RayFire\Plugins\Android\RFLib_DotNet_2018_andr.dll" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.14f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.14f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
@@ -430,6 +424,10 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.14f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="RFLib_DotNet_2018">
+      <HintPath>Assets\Custom Assets\RayFire\Plugins\Windows\x86_x64\RFLib_DotNet_2018.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.YamlDotNet">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
       <Private>False</Private>
@@ -476,10 +474,6 @@
     </Reference>
     <Reference Include="GLTFSerialization">
       <HintPath>Assets\Sketchfab For Unity\Dependencies\Libraries\GLTFSerialization.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="RFLib_DotNet_2018">
-      <HintPath>Assets\Custom Assets\RayFire\Plugins\Windows\x86_x64\RFLib_DotNet_2018.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">
@@ -1184,6 +1178,10 @@
     </Reference>
     <Reference Include="Unity.Sysroot.Linux_x86_64">
       <HintPath>Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="PsdPlugin">

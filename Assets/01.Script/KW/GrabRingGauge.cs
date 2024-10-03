@@ -1,3 +1,4 @@
+using Oculus.Interaction;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,14 +7,21 @@ public class GrabRingGauge : MonoBehaviour
     public Image ringGauge; // 링 게이지로 사용할 Image 컴포넌트
     public float fillSpeed = 0.7f; // 게이지가 채워지는 속도
     public float drainSpeed = 1.0f; // 게이지가 줄어드는 속도
-   
-    private float currentFill = 0f; // 현재 게이지 상태 (0 ~ 1 사이 값)
-    private bool isPlayerInRange = false; // 플레이어가 닿아 있는지 확인하는 변수
 
+    private float currentFill = 0f; // 현재 게이지 상태 (0 ~ 1 사이 값)
+    //private bool isPlayerInRange = false; // 플레이어가 닿아 있는지 확인하는 변수
+    private IActiveState ActiveState { get; set; }
+    void Start()
+    {
+        ActiveState = FindObjectOfType<InteractorActiveState>();
+
+    }
     void Update()
     {
+        bool isActive = ActiveState.Active;
+
         // 플레이어가 범위 내에 있을 때만 게이지 처리
-        if (isPlayerInRange)
+        if (isActive)
         {
             // 그랩 버튼이 눌린 상태일 때 게이지 채우기
             if (OVRInput.Get(OVRInput.Button.PrimaryHandTrigger, OVRInput.Controller.RTouch))
@@ -46,20 +54,20 @@ public class GrabRingGauge : MonoBehaviour
     }
 
     // 플레이어가 범위 안으로 들어왔을 때
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            isPlayerInRange = true; // 플레이어가 범위 내에 있을 때 true
-        }
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.CompareTag("Player"))
+    //    {
+    //        isPlayerInRange = true; // 플레이어가 범위 내에 있을 때 true
+    //    }
+    //}
 
-    // 플레이어가 범위 밖으로 나갔을 때
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            isPlayerInRange = false; // 플레이어가 범위 밖으로 나가면 false
-        }
-    }
+    //// 플레이어가 범위 밖으로 나갔을 때
+    //private void OnTriggerExit(Collider other)
+    //{
+    //    if (other.CompareTag("Player"))
+    //    {
+    //        isPlayerInRange = false; // 플레이어가 범위 밖으로 나가면 false
+    //    }
+    //}
 }
