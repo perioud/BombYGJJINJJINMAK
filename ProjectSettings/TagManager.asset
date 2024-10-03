@@ -18,6 +18,7 @@ TagManager:
   - SeeTarget
   - Fresh
   - Pointer
+  - PlayerHand
   layers:
   - Default
   - TransparentFX
